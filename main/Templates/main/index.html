@@ -1,0 +1,266 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Boot strap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+
+    <style>
+
+        .container{
+            margin-top: 20px;
+        }
+        .jumbotron{
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+        .content{
+            min-height: 60%;
+            margin: auto;
+
+        }
+        .row{
+            margin-top:0%;
+            margin-left:0%;
+            padding:0;
+           
+        }
+        .subTitle{
+            font-size:17px;
+        }
+        .addBtn{
+            width: 400px;
+            margin: 10px;
+        }
+        .restaurantInfoDiv{
+            margin-left:30px;
+            float:left;
+        }
+        .infoHeaderDiv{
+            border-bottom: 1px solid #eee;
+            float:left;
+        }
+        .infoHeaderDiv h1{
+            margin:0;
+        }
+        .categoryAddDiv{
+            float:left;
+            margin-left:25px;
+        }
+        .categoryAddBtn{
+            height: 40px;
+            width: 40px;
+            font-size:20px;
+            padding:3px;
+
+        }
+        .restaurantListDiv{
+            margin-top: 35px;
+            width: 500px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .active{
+            color: #fff;
+            background-color: #337ab7;
+        }
+        .deactive{
+            color: #337ab7;
+            background-color: #fff;
+        }
+        .category{
+            position: relative;
+            display: block;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .deactive:hover{
+            background-color: #D3D3D3;
+        }
+        .restaurantList{
+            display:none;
+        }
+        ul.restaurantList li{
+            background-color:white;
+        }
+        ul.restaurantList li:hover{
+            background-color:#D3D3D3;
+            cursor: pointer;
+        }
+        .input-group{
+            margin: 0px;
+        }
+
+        .emailDiv{
+            float:left;
+            margin-left:25px;
+        }
+        .emailContentGroup{
+            margin:5px;
+        }
+        .emailHeaderDiv h1{
+            margin:0;
+        }
+        .sendBtn{
+            margin-top : 5%;
+            width: 400px;
+            margin: 10px;
+        }
+        .emailContentGroup h4{
+            font-weight: bold;
+            margin:5px;
+        }
+        .emailContentHeader{
+            margin: 10px;
+        }
+        .emailContent{
+            margin: 10px;
+
+        }
+        .inputReceiver{
+            width: 350px;
+        }
+        .inputReceiverSub{
+            font-size: 12px;
+            font-weight: 100;
+        }
+        .inputTitle{
+            width: 350px;
+        }
+        .inputContent{
+            resize: none;
+        }
+
+
+        .panel-footer{
+            margin-top: 50px;
+            height: 10%;
+        }
+
+        #header {
+            text-align: center;
+            position: relative;
+        }
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.restaurantListDiv>li').click(function(){
+                if ($(this).hasClass('active')){
+                    $(this).addClass('deactive')
+                    $(this).removeClass('active')
+                    $(this).next('ul').slideUp();
+                }else{
+                    $(this).removeClass('deactive')
+                    $(this).addClass('active')
+                    $(this).next('ul').slideDown();
+                }
+
+                
+            })
+        });
+
+    </script>
+    <title>Hotspital</title>
+</head>
+<body>
+
+    <a href="#content" class="skipToContent"></a>
+		<!-- header -->
+		<header id="header" class="headerInto" style="position: fixed; top: 0px ;">
+			<a href="./index2.html" class="hideTxt">
+				<img src="{%static './image/logo1.jpeg'%}" class="logo">
+			</a>
+        </header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hotspital</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">로그아웃</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--
+        <div class="header">
+            <div class="jumbotron">
+                <h1>병원 후기 게시판</h1>
+                <p>데이터 갖고 놀조</p>
+            </div>-->
+        
+        <div class="content">
+            <div class="row">
+                <form action="" method="POST" onsubmit="return emailCheckForm();"> {% csrf_token %}
+                    <div class="restaurantInfoDiv ">
+                        <div class="row">
+                            <div class="infoHeaderDiv">
+                                <h1>병원 목록 <small class="subTitle">상세내용을 보려면 클릭하세요.</small></h1>
+                            </div>
+                            <div class="categoryAddDiv">
+                                    <a href="categoryCreate/" class="categoryAddBtn btn btn-primary" role="button">+</a>
+                            </div>
+                        </div>
+                        <ul class="restaurantListDiv nav nav-pills nav-stacked">
+                            {% for category in categories %}
+                            <li class="category deactive">{{ category.category_name }}</li>
+                            <ul class="restaurantList">
+
+                                {% for res in restaurants %}
+                                {% if res.category == category %}
+                                <div class="input-group">
+                                    <span class="input-group-addon">{{ res.id }}
+                                        <a href="restaurantDetail/{{res.id}}">
+                                        </a>
+                                    </span>
+                                    <a href="restaurantDetail/{{res.id}}">
+                                        <input name="res{{res.link}}" id="res{{res.link}}" type="text" class="form-control" disabled style="cursor: pointer;" value="{{res.restaurant_link}}">
+                                    </a>
+                                </div>
+
+                                {% endif %}
+                                {% endfor %}
+
+
+                            </ul>
+                            {% endfor %}
+                        </ul>
+                        <a href="restaurantCreate/" class="sendBtn btn btn-primary" role="button">후기 작성하기</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

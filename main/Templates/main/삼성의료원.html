@@ -1,0 +1,117 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>삼성subpage</title>
+<link href="{%static 'samsung/css/reset.css' %}" rel="stylesheet" />
+<link href="{%static 'samsung/css/common.css' %}" rel="stylesheet" />
+<link href="{%static 'samsung/css/main.css' %}" rel="stylesheet %}" />
+<script type="text/javascript" src="{%static 'samsung/js/jquery-1.9.0.min.js' %}"></script>
+<script type="text/javascript" src="{%static 'samsung/js/jquery.easing.1.3.js' %}"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script type="text/javascript" src="{%static 'samsung/js/jquery.backgroundpos.min.js' %}"></script>
+<script type="text/javascript" src="{%static 'samsung/js/ui.js' %}"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="headerWrap">
+			<div id="header">
+				<h1><a href="./index.html">삼성subpage</a></h1>
+				<ul>
+					<li><a href="http://www.samsunghospital.com" target="_blank" title="새창열림"><img src="{%static './samsung/images/common/gnbText01.gif' %}" alt="삼성서울병원" /></a></li>
+					<li><a href="http://www.kbsmc.co.kr/" target="_blank" title="새창열림"><img src="{%static './samsung/images/common/gnbText02.gif' %}" alt="강북삼성병원 %}" /></a></li>
+					<li><a href="https://smc.skku.edu:442/smc_main/main.smc" target="_blank" title="새창열림"><img src="{%static './samsung/images/common/gnbText03.gif' %}" alt="삼성창원병원" /></a></li>
+					<li><a href="http://www.skkumed.ac.kr/" target="_blank" title="새창열림"><img src="{%static './samsung/images/common/gnbText04.gif' %}" alt="성균관대의과대학"  /></a></li>
+					<li><a href="http://www.samsunghospital.com/home/info/helloSmc.do" target="_blank" title="새창 열림"><img src="{%static './samsung/images/common/gnbText05.gif' %}" alt="SMC웹진" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="container">
+			<div id="mainCont">
+				<div class="visual">
+					<div>
+						<div class="vis01">
+							<a href="http://www.samsunghospital.com" target="_blank" title="새창열림">
+								<span class="pattern"></span>
+								<h2 class="on"><img src="{%static './samsung/images/main/visualText01_on.png' %}" alt="삼성서울병원" /></h2>
+								<h2><img src="{%static './samsung/images/main/visualText01.png' %}" alt="삼성서울병원" /></h2>
+								<p>
+									<img src="{%static './samsung/images/main/btnGo.png' %}" alt="홈페이지 이동" />
+									<img src="{%static './samsung/images/main/btnGoOn.png' %}" alt="홈페이지 이동" />
+								</p>
+								<span class="shadow"></span>
+							</a>
+						</div>
+						<div class="vis02">
+							<a href="http://www.kbsmc.co.kr/" target="_blank" title="새창열림">
+								<span class="pattern"></span>
+								<h2 class="on"><img src="{%static './samsung/images/main/visualText02_on.png' %}" alt="강북삼성병원" /></h2>
+								<h2><img src="{%static './samsung/images/main/visualText02.png' %}" alt="강북삼성병원" /></h2>
+								<p>
+									<img src="{%static './samsung/images/main/btnGo.png' %}" alt="홈페이지 이동" />
+									<img src="{%static './samsung/images/main/btnGoOn.png' %}" alt="홈페이지 이동" />
+								</p>
+								<span class="shadow"></span>
+							</a>
+						</div>
+						<div class="vis03">
+							<a href="https://smc.skku.edu:442/smc_main/main.smc" target="_blank" title="새창열림">
+								<span class="pattern"></span>
+								<h2 class="on"><img src="{%static './samsung/images/main/visualText03_on.png' %}" alt="삼성창원병원" /></h2>
+								<h2><img src="{%static './samsung/images/main/visualText03.png' %}" alt="삼성창원병원" /></h2>
+								<p>
+									<img src="{%static './samsung/images/main/btnGo.png' %}" alt="홈페이지 이동" />
+									<img src="{%static './samsung/images/main/btnGoOn.png' %}" alt="홈페이지 이동" />
+								</p>
+								<span class="shadow"></span>
+							</a>
+						</div>
+						<div class="vis04">
+							<a href="http://www.skkumed.ac.kr/" target="_blank" title="새창열림">
+								<span class="pattern"></span>
+								<h2 class="on"><img src="{%static './samsung/images/main/visualText04_on.png' %}" alt="성균관대의과대학" /></h2>
+								<h2><img src="{%static './samsung/images/main/visualText04.png' %}" alt="성균관대의과대학" /></h2>
+								<p>
+									<img src="{%static './samsung/images/main/btnGo.png' %}" alt="홈페이지 이동" />
+									<img src="{%static './samsung/images/main/btnGoOn.png' %}" alt="홈페이지 이동" />
+								</p>
+								<span class="shadow"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="mainMenu">
+					<ul>
+						<li class="menu01"><a onclick="window.open(this.href,'','width=817,height=794');return false;" href="http://www.smc.or.kr/etc/sw2.html" title="새창열림"><img src="{%static './samsung/images/main/menuText01.jpg' %}" alt="삼성의료원 사회공헌" /></a></li>
+						<li class="menu02"><a href="http://www.samsunghospital.com/home/healthInfo/classroom/healthClassRoomList.do" target="_blank" title="새창열림"><img src="{%static './samsung/images/main/menuText02.jpg' %}" alt="삼성서울병원 건강교실" /></a></li>
+						<li class="menu03"><a href="http://www.kbsmc.co.kr/healthinfo/healthinfo_book_list.jsp" target="_blank" title="새창열림"><img src="{%static './samsung/images/main/menuText03.jpg' %}" alt="강북삼성병원 건강강좌" /></a></li>
+						<li class="menu04"><a href="http://www.samsunghospital.com/home/info/helloSmc.do" target="_blank" title="새창 열림"><img src="{%static './samsung/images/main/menuText04.jpg' %}" alt="Hello! SMC" /></a></li>
+						<li class="menu05"><a href="http://www.samsunghospital.com/home/info/annals.do" target="_blank" title="새창열림"><img src="{%static './samsung/images/main/menuText05.jpg' %}" alt="삼성의료원 연보" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footerWrap">
+			<div id="footer">
+				<dl class="familySite">
+					<dt>
+						<a href="#footDeptList">
+							<img alt="사이트 바로가기" src="{%static './samsung/images/main/Logo.png' %}">
+						</a>
+					</dt>
+				</dl>
+				<p class="address">박균탁 SubPage</p>
+				<p class="copy">COPYRIGHT©데이터갖고놀조</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

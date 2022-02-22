@@ -1,0 +1,2524 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>가톨릭대학교 서울성모병원</title>
+
+    <link rel="stylesheet" type="text/css" href="{%static 'css/reset.css'%}" />
+	<link rel="stylesheet" type="text/css" href="{%static 'css/ui.common.css'%}" />
+	<link rel="stylesheet" type="text/css" href="{%static 'css/ui.common.seoul.css'%}" />
+	<link rel="stylesheet" type="text/css" href="{%static 'css/jquery.mCustomScrollbar.css'%}" />
+	<link rel="stylesheet" type="text/css" href="{%static 'css/ui_common/css/konan.sf.css'%}" />
+	<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}" />
+	<script type="text/javascript" src="{%static 'js/jquery-1.12.4.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.easing.1.3.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/TweenMax.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/ScrollToPlugin.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/masonry.pkgd.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.bxslider.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/ui.common.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.animateNumber.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.accessSlider.js'%}"></script>
+
+	<style type="text/css">
+	.btn_img img span:hover {
+}
+
+
+.reduce_multi p:hover {
+}
+
+	</style>
+
+	<style type="text/css">
+    [v-cloak] {
+        display: none;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .form-text input::-ms-clear {
+        display: none;
+    }
+
+    #footer_wrap_sub .loading_layer {
+        position: fixed !important;
+    }
+
+
+	</style>
+
+
+
+</head>
+
+<body class="main_layout">
+
+<div id="wrap">
+
+<div class="header_util">
+	<div class="inner">
+		<ul class="util_left">
+			<li>
+						<a href="#" target="_self">
+							<em>사랑의 실천</em>
+						</a>
+					</li>
+				<li>
+						<a href="#" target="_self">
+							<em>병원소식</em>
+						</a>
+					</li>
+				<li>
+						<a href="#" target="_self">
+							<em>고객사연</em>
+						</a>
+					</li>
+				<li>
+						<a href="#" target="_self">
+							<em>병원소개</em>
+						</a>
+					</li>
+				<li>
+				<a href="#" target="_self">
+					<em>평생건강증진센터</em>
+				</a>
+			</li>
+		</ul>
+		<ul class="util_right">
+			<li>
+						<a href="#">
+							<em>로그인</em>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<em>회원가입</em>
+						</a>
+					</li>
+				<li class="global_gnb">
+				<a href="#">
+					<em>LANGUAGE</em>
+				</a>
+				<div class="global_list">
+            <ul>
+                <li>
+                    <a href="https://www.cmcseoul.or.kr/page/main" target="_blank">
+                        <em>Korean</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cmcseoul.or.kr/en.common.main.main.sp" target="_blank">
+                        <em>English</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cmcseoul.or.kr/jp.common.main.main.sp" target="_blank">
+                        <em>Japanese</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cmcseoul.or.kr/cn.common.main.main.sp" target="_blank">
+                        <em>Chinese</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cmcseoul.or.kr/ru.common.main.main.sp" target="_blank">
+                        <em>Russian</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cmcseoul.or.kr/ar.common.main.main.sp" target="_blank">
+                        <em>Arabic</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+		</ul>
+	</div>
+</div>
+
+<header id="header_wrap">
+	<div class="inner">
+		<h1 class="logo">
+			<a href="javascript:cmc.util.mainPage();">
+				<img src="{%static 'image/top_logo.png'%}" alt="가톨릭대학교 서울성모병원">
+			</a>
+		</h1>
+	</div>
+
+	<div class="header_gnb_wrap ">
+		<div class="inner">
+			<!-- GLOBAL MENU -->
+			<nav id="gnb">
+				<div class="gnb_wrap">
+					<div class="d_1_wrap" id="menuList">
+						<ul class="d_1">
+							<li>
+										<div class="d_btn_1">
+											<a href="#" target="_self">
+												<em>진료과/의료진</em>
+											</a>
+										</div>
+										<div class="d_2">
+												<ul>
+													<li>
+																<a href="#" target="_self">
+																	<em>진료과</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>의료진</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>클리닉</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>전문진료센터</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>진료지원부서</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>간호부</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>약제부</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>임상시험약국</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>인체유래물은행</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>인체병리박물관</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>메디컬프론티어</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>명의예감</em>
+																</a>
+																</li>
+														</ul>
+											</div>
+										</li>
+								<li>
+										<div class="d_btn_1">
+											<a href="#" target="_self">
+												<em>진료예약</em>
+											</a>
+										</div>
+										<div class="d_2">
+												<ul>
+													<li>
+																<a href="#" target="_self">
+																	<em>진료과예약</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>의료진예약</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>과거 진료이력 예약</em>
+																</a>
+																</li>
+														</ul>
+											</div>
+										</li>
+								<li>
+										<div class="d_btn_1">
+											<a href="#" target="_self">
+												<em>병원안내</em>
+											</a>
+										</div>
+										<div class="d_2">
+												<ul>
+													<li>
+																<a href="#" target="_self">
+																	<em>외래진료안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>외래안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>외국인진료안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>외래진료시간표</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>토요진료시간표</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>비급여진료비용검색</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="/hospitalguide.substitute_prescribe.sp" target="_self">
+																							<em>대리처방 절차 안내</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>응급진료안내</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>건강검진안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>평생건강증진센터</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>이용안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>주차장 이용안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>병원둘러보기</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="/hospitalguide.amenities.sp" target="_self">
+																							<em>편의시설안내</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>입퇴원안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>입퇴원절차</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>원무매니저</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>입원생활안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>병문안안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>환자참여방법안내</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>간호서비스안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>가정간호</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>증명서발급안내</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>제증명 발급안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_blank">
+																							<em>인터넷증명서발급</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>의무기록사본발급안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>영상자료발급안내</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>병리검사슬라이드발급</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>연말정산(소득공제서류)</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>원무상담</em>
+																</a>
+																<div class="d_3">
+																		<ul>
+																			<li>
+																						<a href="#" target="_self">
+																							<em>자주찾는 질문</em>
+																						</a>
+																					</li>
+																				<li>
+																						<a href="#" target="_self">
+																							<em>문의 및 상담</em>
+																						</a>
+																					</li>
+																				</ul>
+																	</div>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>찾아오시는 길</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>전화번호안내</em>
+																</a>
+																</li>
+														</ul>
+											</div>
+										</li>
+								<li>
+										<div class="d_btn_1">
+											<a href="#" target="_self">
+												<em>건강정보</em>
+											</a>
+										</div>
+										<div class="d_2">
+												<ul>
+													<li>
+																<a href="#" target="_self">
+																	<em>건강매거진</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>건강바이블</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>건강TV</em>
+																</a>
+																</li>
+														</ul>
+											</div>
+										</li>
+								<li>
+										<div class="d_btn_1">
+											<a href="#" target="_self">
+												<em>진료차트</em>
+											</a>
+										</div>
+										<div class="d_2">
+												<ul>
+													<li>
+																<a href="#" target="_self">
+																	<em>예약현황</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>진료내역</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>검사내역</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>약처방내역</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>문의내역</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>관심의료진</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>관심건강매거진</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>칭찬사연</em>
+																</a>
+																</li>
+														<li>
+																<a href="#" target="_self">
+																	<em>건의 및 불편접수</em>
+																</a>
+																</li>
+														</ul>
+											</div>
+										</li>
+								</ul>
+					</div>
+				</div>
+			</nav>
+			<!--// GLOBAL MENU -->
+			<div class="wrap_gnb_util">
+				<span class="btn_search">
+					<a href="#">
+						<em class="blind">검색</em>
+					</a>
+					<!-- #TOTAL_SEARCH -->
+					<!-- #TOTAL_SEARCH -->
+<div id="total_search">
+    <div class="total_search_wrap status_init"> <!-- status_init : 처음상태 && status_input : 글입력  (no_word_status:검색어 없음)   -->
+        <div class="inner">
+            <div class="total_searh_area">
+                <div class="input_wrap">
+                	<!-- 검색 후 재검색하고 뒤로가기 선택하면 양식 다시제출 문제. GET 방식 유지 -->
+                    <form name="searchForm" id="AKCFrm" method="get" action="/common.search.search_result.sp">
+					<span class="form-text">
+						<label class="placeholder" for="kwd">검색어를 입력하세요.</label>
+						<input type="text" id="kwd" name="kwd" autocomplete="off" value="">
+                        <input type="hidden" id="instNo" name="instNo" value="2">
+                    </span>
+                        <!-- AKC keyword -->
+                        <div id="keyword" style="display:none;">
+                            <div id="autocomplete_scroll">
+                                <ul class="b_line">
+                                <li><a href="#">검색어 자동완성을 사용중입니다.</a></li>
+                                </ul>
+                            </div>
+                            <!-- choose_word -->
+                            <div class="konan-autocomplete-footer" align-text="right" style="padding-right: 10px">
+                                <a id="akc_able" class="auto_search_btn">자동 완성 끄기</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                <a id="akc_end" class="auto_search_btn">닫기</a>
+                            </div>
+                            <!-- //choose_word -->
+                        </div>
+                        <!-- //AKC keyword -->
+
+<button type="button" class="del_txt" onclick="tglkwddel()" style="display: none">
+                        <em class="blind">텍스트 삭제</em>
+                    </button>
+                    <button class="search_btn" onclick="submit()">
+                        <em class="blind">검색</em>
+                    </button>
+                    </form>
+                </div>
+                <div class="fir_wrap">
+                    <div class="pop_word">
+                        </div>
+                    <div class="call_info">
+                        <em>대표전화</em>
+                        <strong class="f_eng">1588-1511</strong>
+                        </div>
+                </div>
+                <div class="search_word_wrap">
+					<span class="no_word">
+						<em>해당 검색어가 없습니다.</em>
+					</span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <em><span class="text_color-main">고혈압</span></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em>급성<span class="text_color-main">고혈압</span></em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em>당뇨성<span class="text_color-main">고혈압</span></em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="keyword2" class="util_area">
+            <div class="inner">
+				<span class="auto_search_btn">
+					<a href="#">
+						<em>자동 완성 끄기</em>
+					</a>
+				</span>
+                <span class="close_search_btn">
+					<a href="#">
+						<em>닫기</em>
+					</a>
+				</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// #TOTAL_SEARCH -->
+
+<!--// 검색시 자동완성 기능 삭제. 성빈센트병원 요청 -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		// 검색시 자동완성기능을 사용하지 않음
+		try { tglAkcAbl(); } catch(exception) { console.log(exception); }
+	});
+</script>
+<!--// 검색시 자동완성 기능 삭제 -->
+<!--// #TOTAL_SEARCH -->
+				</span>
+				<span class="btn_total">
+					<a href="#">
+						<em class="blind">전체메뉴</em>
+					</a>
+					<!-- #SITEMAP -->
+					<div class="total_menu">
+    <div class="inner">
+        <div class="p_t">
+            <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>진료과/의료진</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>진료과</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>의료진</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>클리닉</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>전문진료센터</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>진료지원부서</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>간호부</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>약제부</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>임상시험약국</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>인체유래물은행</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>인체병리박물관</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>메디컬프론티어</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>명의예감</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>진료예약</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>진료과예약</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>의료진예약</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>과거 진료이력 예약</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>진료차트</strong>
+                            </a>
+                        </span>
+                        </div>
+                </div>
+        <div class="p_t">
+            <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>병원소개</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>병원장 인사말</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>역대병원장</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>경영비전</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>CMC 역사관</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>홍보갤러리</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>사랑의 실천</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>원목</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>원목활동</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>영적돌봄안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>영성의향기</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>사회사업</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>사회사업팀소개</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>성모자선회</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>자원봉사</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>호스피스</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>라파엘 어린이학교</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>기부후원</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>소아청소년완화의료팀</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        <div class="p_t">
+            <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>병원안내</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>외래진료안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.ambulatory_care.sp');" href="#" target="_self">
+                                                            <em>외래안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.foreigner.sp');" href="#" target="_self">
+                                                            <em>외국인진료안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/common.hospitalguide.schedule_amb.sp');" href="#" target="_self">
+                                                            <em>외래진료시간표</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/common.hospitalguide.schedule_satur.sp');" href="#" target="_self">
+                                                            <em>토요진료시간표</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/common.hospitalguide.non_payment.sp');" href="#" target="_self">
+                                                            <em>비급여진료비용검색</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.substitute_prescribe.sp');" href="#" target="_self">
+                                                            <em>대리처방 절차 안내</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>응급진료안내</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>건강검진안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.total_checkup.sp');" href="#" target="_self">
+                                                            <em>평생건강증진센터</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="/hospitalguide.parking.sp" target="_self">
+                                            <em>이용안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.parking.sp');" href="#" target="_self">
+                                                            <em>주차장 이용안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/page/hospitalguide/lookaround');" href="#" target="_self">
+                                                            <em>병원둘러보기</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.amenities.sp');" href="#" target="_self">
+                                                            <em>편의시설안내</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>입퇴원안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.hosp_step.sp');" href="#" target="_self">
+                                                            <em>입퇴원절차</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.info_manager.sp');" href="#" target="_self">
+                                                            <em>원무매니저</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.info_living.sp');" href="#" target="_self">
+                                                            <em>입원생활안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.visit.sp');" href="#" target="_self">
+                                                            <em>병문안안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.participation.sp');" href="#" target="_self">
+                                                            <em>환자참여방법안내</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>간호서비스안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.home_care.sp');" href="#" target="_self">
+                                                            <em>가정간호</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>증명서발급안내</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.issued_doc.sp');" href="#" target="_self">
+                                                            <em>제증명 발급안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('https://certi.cmcseoul.or.kr/servlet/PKI?COMMAND=START');" href="#" target="_blank">
+                                                            <em>인터넷증명서발급</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.issued_recod.sp');" href="#" target="_self">
+                                                            <em>의무기록사본발급안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.issued_clip.sp');" href="#" target="_self">
+                                                            <em>영상자료발급안내</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.clinic_data.sp');" href="/hospitalguide.clinic_data.sp" target="_self">
+                                                            <em>병리검사슬라이드발급</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/hospitalguide.year_tax.sp');" href="/hospitalguide.year_tax.sp" target="_self">
+                                                            <em>연말정산(소득공제서류)</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>원무상담</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/page/board/faq');" href="#" target="_self">
+                                                            <em>자주찾는 질문</em>
+                                                        </a>
+                                                    </li>
+                                                <li>
+                                                    	<a onclick="javascript:gnbAlert3('/page/board/question_counsel');" href="#" target="_self">
+                                                            <em>문의 및 상담</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>찾아오시는 길</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>전화번호안내</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <script type="text/javascript">
+
+	function gnbAlert3(linkurl){
+	if(linkurl == '/hospitalguide.parking.sp' && window.instNo == 5){
+		alert('주차장 신축공사(2021년 12월 완료 예정)로 인해\n주차공간이 많이협소하오니 병원 방문시\n대중교통을 이용해 주시기 바랍니다.');
+	}
+}
+
+</script>
+        </div>
+        <div class="p_t">
+            <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>건강정보</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>건강매거진</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>건강바이블</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>건강TV</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>병원소식</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>뉴스</em>
+                                        </a>
+                                        <ul>
+                                                <li>
+                                                        <a href="#" target="_self">
+                                                            <em>진료와 서비스 질 관리</em>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>공지사항</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>교육·행사</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_blank">
+                                            <em>병원소식지</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>채용정보</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                <div>
+                        <span  class="tit">
+                            <a href="#" target="_self">
+                                <strong>고객사연</strong>
+                            </a>
+                        </span>
+                        <ul>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>칭찬사연</em>
+                                        </a>
+                                        </li>
+                                <li>
+                                        <a href="#" target="_self">
+                                            <em>감동사연</em>
+                                        </a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        <div class="close_btn">
+            <a href="#">
+                <em class="blind">전체메뉴 닫기</em>
+            </a>
+        </div>
+    </div>
+</div><!--// #SITEMAP -->
+				</span>
+			</div>
+
+			<div class="gnb_banner slide_banner_ui">
+				<strong class="gnb_banner_tit">CMC홍보소식</strong>
+				<div class="banner_wrap">
+					<div class="banner_inner_wrap">
+						<ul>
+							<li class="banner bnr01">
+									<a href="https://www.chh.or.kr/page/main" target="_blank" class="b_1">
+										<img src="{%static 'image/bar_45145.jpeg'%}" alt="">
+									</a>
+								</li>
+							<li class="banner bnr02">
+									<a href="https://www.cmcseoul.or.kr/page/board/news/459458" target="_blank" class="b_2">
+										<img src="{%static 'image/bar_45145.jpeg'%}" alt="">
+									</a>
+								</li>
+							<li class="banner bnr03">
+									<a href="https://www.cmcseoul.or.kr/healthcare/index.do" target="_blank" class="b_3">
+										<img src="{%static 'image/bar_45145.jpeg'%}" alt="">
+									</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+				<div class="btn_banner"></div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--// HEADER -->
+<script type="text/javascript">
+var currUri = window.location.pathname;
+/*$(document).ready(function() {
+	// GNB 현재 메뉴 강조 표시
+	$('#gnb ul li a').each(function() {
+		var $this = $(this);
+		var linkUri = $this.attr('href');
+		console.log("currUri : ", currUri);
+		console.log("linkUri : ", linkUri);
+		if(linkUri && currUri.substring(0, linkUri.length) === linkUri) {
+			$this.closest('li').addClass("active");
+		}
+	});
+});*/
+</script><!--// #HEADER -->
+
+
+
+       <!-- 2020. 03. 13 팝업소스 신규 시작 -->
+
+			<SCRIPT LANGUAGE='JavaScript'>
+            <!--var sdate = new Date("2017/01/01 00:01"); -->
+            <!--var edate = new Date("2019/07/23 08:00");  -->
+
+            <!-- 팝업 타이머 추가 -->
+
+            today = new Date();
+            var tyear = today.getFullYear();
+
+            var tm = today.getMonth()+1; // 0~11로 출력하므로 1을 더해준다.
+            if(tm < 10) {
+            tm = "0"+tm;
+            }
+
+            var td = today.getDate();
+            if(td < 10) {
+            td = "0"+td;
+            }
+
+            var th = today.getHours();
+            if(th < 10) {
+            th = "0"+th;
+            }
+
+            var nowDate = tyear+""+tm+""+td+""+th;
+
+			/*
+            if(nowDate >= '2019081321'){
+               document.getElementById('laypop_wrap').style.display = "none";
+            }
+            */
+
+            <!-- 팝업 타이머 추가 -->
+
+            jQuery(document).ready(function(){
+
+				var	cookie = document.cookie;
+				var arrays = jQuery("[id^=mainPopup]");
+				arrays.each(function(index) {
+					var popup = jQuery(arrays[index]);
+
+					if (cookie.indexOf(""+popup.attr("id")+"=done") < 0 ){
+						jQuery('#'+popup.attr("id")).show();
+					} else {
+						jQuery('#'+popup.attr("id")).hide();
+					}
+				});
+
+            });
+
+
+            function setCookie( name, value, expiredays ){
+                var todayDate = new Date();
+                todayDate.setDate( todayDate.getDate() + expiredays );
+                document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+
+            function getCookie( name ){
+                var nameOfCookie = name + "=";
+                var x = 0;
+                while ( x <= document.cookie.length ) {
+                    var y = (x+nameOfCookie.length);
+                    if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+                        if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length;
+                        return unescape( document.cookie.substring( y, endOfCookie ) );
+                    }
+                    x = document.cookie.indexOf( " ", x ) + 1;
+                    if ( x == 0 ) break;
+                }
+                return "";
+            }
+
+
+            function closeWin(thisID) {
+                var checkbox = jQuery("input[type=checkbox]",jQuery('#'+thisID) ).is(":checked");
+                if (checkbox){
+                    setCookie(thisID , "done" , 1 );
+                }
+                jQuery('#'+thisID).remove();
+            }
+            //-->
+            </SCRIPT>
+
+            <!-- layer popup -->
+            <div id="laypop_wrap">
+
+<!--                &lt;!&ndash; 공지 &ndash;&gt;-->
+<!--				<div id="mainPopup112" style="position:absolute; left:20px; top:25px;  z-index:999; border:1px solid rgb(211, 211, 211); background:none; display:none;">-->
+<!--						<p style="opacity: 1.0;filter: alpha(opacity=100); max-height: 700px; overflow-x: hidden; overflow-y: auto;">-->
+<!--							<a href='#' target='_self'>-->
+<!--								<img src='image/52819.jpeg' alt="" border="0" style="width:540px;">-->
+<!--							</a>-->
+<!--						</p>-->
+<!--						<div style="padding:10px 0; background:#efefef; text-align:center;">-->
+<!--		                    <input type="checkbox" id="chkbox" name="chkbox" value="" onchange="javascript:closeWin('mainPopup112');" style="vertical-align:middle;">  오늘 하루 이 창을 열지 않음 <a href="javascript:closeWin('mainPopup112');"><b>[닫기]</b></a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			&lt;!&ndash; // layer popup &ndash;&gt;-->
+<!--                -->
+<!--       &lt;!&ndash; 2020. 03. 13 팝업소스 신규 끝 &ndash;&gt;-->
+
+	<!-- CONTAINER -->
+	<div id="container" class="main"><!-- 1뎁스명 클래스 -->
+		<!-- SUB SECTION -->
+		<section id="sub_section">
+			<div class="content">
+				<div class="main_vi_banner">
+					<div class="login_box status_logout"><!-- status_login : 로그인 상태 && status_logout:로그아웃상태 -->
+						<div class="logout_area">
+									<div class="logout_area_wrap">
+										<div class="txt_grad">
+											<strong>온라인 가족이 되어주세요!</strong>
+											<p>스마트한 서비스 이용 하실 수 있습니다.</p>
+										</div>
+										<div class="btn_area">
+											<span class="login_btn">
+												<a href="#;" class="btn-type02">
+													<em>로그인</em>
+												</a>
+											</span>
+											<span class="join_btn">
+												<a href="#" class="btn-type02">
+													<em>회원가입</em>
+												</a>
+											</span>
+										</div>
+										<div class="quick_list_btn">
+											<ul>
+												<li class="appoint">
+													<a href="#">
+														<p>스마트한 <span class="text_color-main">진료예약</span>을 이용해보세요</p>
+													</a>
+												</li>
+												<li class="chart">
+													<a href="#">
+														<p>스마트한 <span class="text_color-main">진료차트</span>로 건강을 관리하세요</p>
+													</a>
+												</li>
+												<li class="health">
+													<a href="#">
+														<p>스마트한 <span class="text_color-main">건강정보</span>를 확인하세요</p>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+					<div class="visual-banner slide_banner_ui">
+						<div class="banner_wrap">
+							<div class="banner_inner_wrap">
+								<ul>
+									<li class="banner bnr01">
+											<a href="https://www.cmcseoul.or.kr/hospitalguide.year_tax.sp" target="_self">
+												<img src="{%static 'image/slide_52703.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr02">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/484835" target="_self">
+												<img src="{%static 'image/slide_52642.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr03">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/483906" target="_self">
+												<img src="{%static 'image/slide_52203.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr04">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/483359" target="_blank">
+												<img src="{%static 'image/slide_52051.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr05">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/483297" target="_blank">
+												<img src="{%static 'image/slide_52031.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr06">
+											<a href="javascript:;" target="_self">
+												<img src="{%static 'image/slide_51598.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr07">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/483008" target="_self">
+												<img src="{%static 'image/slide_51951.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr08">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/482420" target="_blank">
+												<img src="{%static 'image/slide_51881.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr09">
+											<a href="https://www.cmcseoul.or.kr/page/board/news/479080" target="_blank">
+												<img src="{%static 'image/slide_49435.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr010">
+											<a href="https://www.cmcseoul.or.kr/page/board/medical_frontier/479509" target="_blank">
+												<img src="{%static 'image/slide_49882.jpeg'%}" alt="">
+											</a>
+										</li>
+									<li class="banner bnr011">
+											<a href="https://www.cmcseoul.or.kr/page/board/notice/467525" target="_blank">
+												<img src="{%static 'image/slide_42570.jpeg'%}" alt="">
+											</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+						<div class="btn_banner"></div>
+					</div>
+				</div>
+				<div class="cont_box-main_util">
+					<div class="call_info">
+						<span>
+							<em>대표전화</em><strong class="f_eng">
+        1588-1511
+    </strong>
+						</span>
+					</div>
+					<div class="main_util_list">
+						<div class="main_util-resev_call">
+						<div class="info_txt">
+									<strong>첫 방문 고객 예약상담</strong>
+										<p>입력하신 번호로 전문상담 간호사가 연락드립니다.<br/>운영시간 (평일 8~16시, 토요일 8~11시)</p>
+										</div>
+								<div class="util_wrap">
+									<span class="form-text name">
+										<label class="placeholder" for="quick_name">이름</label>
+										<input type="text" id="quick_name" name="quick_name" autocomplete="off" minlength="2" maxlength="30">
+									</span>
+									<span class="form-text mobile">
+										<label class="placeholder" for="quick_hp_no">전화번호</label>
+										<input type="text" id="quick_hp_no" name="quick_hp_no" autocomplete="off" minlength="12" maxlength="13">
+									</span>
+									<span class="requ_call_btn">
+										<a href="#" id="quick_appointment_btn" class="btn-type02" onClick="fnOpenQuickAppointmentPopup(event.target);">
+											<em>요청</em>
+										</a>
+									</span>
+								</div>
+							</div>
+						<div class="main_util-resev_internet">
+							<div class="info_txt">
+								<strong>인터넷 진료예약</strong>
+								<p>홈페이지에서 개인의 일정에 맞춰<br>자유롭게 진료 예약을 할 수 있습니다.</p>
+							</div>
+							<div class="util_wrap">
+								<span class="member_btn">
+												<a href="#" class="btn-type02">
+													<em>회원예약</em>
+												</a>
+											</span>
+											<span class="nomember_btn">
+												<a href="#" class="btn-type02">
+													<em>비회원예약</em>
+												</a>
+											</span>
+										</div>
+						</div>
+						<form name="searchForm" id="searchForm" method="post" action="/common.search.search_result.sp">
+						<div class="main_util-search">
+							<div class="info_txt">
+								<strong>진료과/의료진 검색</strong>
+								<p>직접 검색하여 원하는 정보를 찾거나<br>빠르게 예약할 수 있습니다.</p>
+							</div>
+							<div class="util_wrap">
+								<span class="form-text">
+									<label class="placeholder" for="select_text_1">진료과명/의료진명 입력</label>
+									<input type="text" id="select_text_1" name="kwd" autocomplete="off">
+									<button type="button" class="main_btn-search">
+										<em class="blind">검색</em>
+									</button>
+									<input type="hidden" id="instNo" name="instNo" value="2">
+									<input type="hidden" id="medicalSearch" name="medicalSearch" value="Y">
+								</span>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+				<div class="cont_box-health">
+					<div class="inner">
+						<h3>
+							<a href="/page/health/magazine" style="color:#111;">
+								건강매거진
+							</a>
+						</h3>
+						<div class="list-type03 small">
+							<ul>
+								<li>
+										<a href="#">
+											<div class="btn_img img"><!-- 클래스 추가 : 영상 - clip / 이미지 - img  -->
+												<span class="cont_img">
+													<img src="{%static 'image/sub_00000.jpeg'%}" alt="지속적인 압력으로 생기는 ‘욕창’">
+														</span>
+												</div>
+											<div class="reduce_multi">
+												<p class="txt">지속적인 압력으로 생기는 ‘욕창’</p>
+											</div>
+
+
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.14</em>
+											<em class="tit">카드뉴스</em>
+										</div>
+									</li>
+										<li>
+										<a href="#">
+											<div class="btn_img img"><!-- 클래스 추가 : 영상 - clip / 이미지 - img  -->
+												<span class="cont_img">
+													<img src="{%static 'image/sub_00002.jpeg'%}" alt="피로, 어지럼증 호소하는 중년 남성, 만성골수성백혈병 주의!">
+														</span>
+												</div>
+											<div class="reduce_multi">
+												<p class="txt">피로, 어지럼증 호소하는 중년 남성, 만성골수성백혈병 주의!</p>
+											</div>
+										</a>
+											<div class="data_con">
+											<em class="data">2022.02.10</em>
+											<em class="tit">카드뉴스</em>
+											</div>
+										</li>
+								<li>
+										<a href="#">
+											<div class="btn_img img"><!-- 클래스 추가 : 영상 - clip / 이미지 - img  -->
+												<span class="cont_img">
+													<img src="{%static 'image/sub_53048.jpeg'%}" alt="몸이 예전 같지 않다면? 40대부터 시작되는 남성 갱년기">
+														</span>
+												</div>
+											<div class="reduce_multi">
+												<p class="txt">몸이 예전 같지 않다면? 40대부터 시작되는 남성 갱년기</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.07</em>
+											<em class="tit">슬라이드</em>
+										</div>
+									</li>
+								<li>
+										<a href="#">
+											<div class="btn_img img"><!-- 클래스 추가 : 영상 - clip / 이미지 - img  -->
+												<span class="cont_img">
+													<img src="{%static 'image/sub_00001.jpeg'%}" alt="&#039;아이가 눈을 자주 비벼요&#039; 어린이 덧눈꺼풀">
+														</span>
+												</div>
+											<div class="reduce_multi">
+												<p class="txt">&#039;아이가 눈을 자주 비벼요&#039; 어린이 덧눈꺼풀</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.03</em>
+											<em class="tit">카드뉴스</em>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont_box-health" style="padding-top:0px;">
+					<div class="inner">
+						<h3>
+							<a href="#" style="color:#111;">
+								건강TV
+							</a>
+						</h3>
+						<div class="list-type03 small">
+							<ul>
+								<li>
+										<a href="javascript:fnTvDetailView('584', 'https://youtu.be/FM6NLSEnz5Q');">
+											<div class="btn_img img">
+												<span class="cont_img">
+													<img src="{%static 'image/53083.jpeg'%}" alt="">
+														</span>
+											</div>
+											<div class="reduce_multi">
+												<p class="txt">2022년 2월, 서울성모병원 영상 뉴스</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.09</em>
+											<em class="tit">병원뉴스</em>
+										</div>
+									</li>
+								<li>
+										<a href="javascript:fnTvDetailView('583', 'https://youtu.be/hg4nlJKAIqk');">
+											<div class="btn_img img">
+												<span class="cont_img">
+													<img src="{%static 'image/health_tv_53082.jpeg'%}" alt="">
+														</span>
+											</div>
+											<div class="reduce_multi">
+												<p class="txt">2021년도 지역응급의료센터 평가 1위</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.09</em>
+											<em class="tit">병원뉴스</em>
+										</div>
+									</li>
+								<li>
+										<a href="javascript:fnTvDetailView('582', 'https://youtu.be/G0g-8772j4Q');">
+											<div class="btn_img img">
+												<span class="cont_img">
+													<img src="{%static 'image/health_tv_53081.jpeg'%}" alt="">
+														</span>
+											</div>
+											<div class="reduce_multi">
+												<p class="txt">화재 발생 재난대비 모의훈련 실시</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.09</em>
+											<em class="tit">병원뉴스</em>
+										</div>
+									</li>
+								<li>
+										<a href="javascript:fnTvDetailView('580', 'https://youtu.be/-Kna8SwzJWE');">
+											<div class="btn_img img">
+												<span class="cont_img">
+													<img src="{%static 'image/health_tv_53032.jpeg'%}" alt="">
+														</span>
+											</div>
+											<div class="reduce_multi">
+												<p class="txt">뇌졸중 치료와 예방은? - 신경외과 최재호 교수</p>
+											</div>
+										</a>
+										<div class="data_con">
+											<em class="data">2022.02.03</em>
+											<em class="tit">건강톡톡</em>
+										</div>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cont_box-hos_story">
+					<div class="inner">
+						<h3>
+							<a href="#" style="color:#111;">
+								병원소식
+							</a>
+						</h3>
+						<div class="list-type03 middle">
+							<ul>
+								<li>
+										<a href="#" target="_self">
+											<div class="btn_img img">
+												<span class="cont_img">
+												</span>
+												<div class="hos_cont">
+													<div class="reduce_multi title">
+														<strong class="txt">천식·COPD 중복 질환 악화 위험, 동양인이 약 2배 높아</strong>
+													</div>
+													<div class="reduce_multi cont">
+														<p class="txt">천식·COPD 중복 질환 악화 위험, 동양인이 약 2배 높아
+- 서울성모병원 호흡기내과 이진국 교수팀, 인종별 유병률 및 악화 위험 분석 -
+- 미국 및 국내 C</p>
+													</div>
+
+													<div class="data_con">
+														<em class="data">2022.02.14</em>
+														<em class="tit">뉴스</em>
+													</div>
+												</div>
+												<div class="label_wrap">
+													<span class="label-new">
+														<em class="blind">새로운글</em>
+													</span>
+												</div>
+												</div>
+										</a>
+									</li>
+								<li>
+										<a href="#" target="_self">
+											<div class="btn_img img">
+												<span class="cont_img">
+												</span>
+												<div class="hos_cont">
+													<div class="reduce_multi title">
+														<strong class="txt">서울성모병원 데이터심의위원회 2022년 1월 데이터활용심의 결과</strong>
+													</div>
+													<div class="reduce_multi cont">
+														<p class="txt">서울성모병원 데이터심의위원회 2022년 1월 데이터활용심의 결과
+
+
+
+
+서울성모병원은
+
+개인정보보호법 제 2조 “가명정보 처리에 관한 특례”, 보건복지부 “보건</p>
+													</div>
+
+													<div class="data_con">
+														<em class="data">2022.02.14</em>
+														<em class="tit">공지사항</em>
+													</div>
+												</div>
+												<div class="label_wrap">
+													<span class="label-new">
+														<em class="blind">새로운글</em>
+													</span>
+												</div>
+												</div>
+										</a>
+									</li>
+								<li>
+										<a href="javascript:fnGoRecruitDetail('20220217', '/page/board/recruit/486044');">
+											<div class="btn_img img">
+												<span class="cont_img">
+												</span>
+												<div class="hos_cont">
+													<div class="reduce_multi title">
+														<strong class="txt">의료지원직(약제부/계약직) 공개채용(기간연장)</strong>
+													</div>
+													<div class="reduce_multi cont">
+														<p class="txt">의료지원직(약제부/계약직)공개채용(기간연장)
+
+
+
+
+
+1.모집기관:서울성모병원 약제부
+
+
+
+2.모집직종: 의료지원직(계약직)
+
+
+
+3. 근무기간 : 1년 단위 계</p>
+													</div>
+
+													<div class="data_con">
+														<em class="data">2022.02.14</em>
+														<em class="tit">채용정보</em>
+													</div>
+												</div>
+												<div class="label_wrap">
+													<span class="label-new">
+														<em class="blind">새로운글</em>
+													</span>
+												</div>
+												</div>
+										</a>
+									</li>
+								<li>
+										<a href="javascript:fnGoRecruitDetail('20220217', '/page/board/recruit/485982');">
+											<div class="btn_img img">
+												<span class="cont_img">
+												</span>
+												<div class="hos_cont">
+													<div class="reduce_multi title">
+														<strong class="txt">간호직(암병원운영팀/계약직) 공개채용</strong>
+													</div>
+													<div class="reduce_multi cont">
+														<p class="txt">간호직(암병원운영팀/계약직)공개채용
+
+
+
+
+
+1.모집기관:서울성모병원 암병원운영팀
+
+
+
+2.모집직종: 간호직(계약직)
+
+
+
+3. 근무기간 : 2022년 3월 1일</p>
+													</div>
+
+													<div class="data_con">
+														<em class="data">2022.02.11</em>
+														<em class="tit">채용정보</em>
+													</div>
+												</div>
+												</div>
+										</a>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+</div></section>
+	</div>
+
+
+
+	<!--//  비디오팝업 200128  -->
+	<!--// CONTAINER -->
+	<div class="f_banner">
+		<div class="inner">
+			<ul class="bannerBox">
+				<li><a href="https://www.cmcseoul.or.kr/page/board/news/463552" target="_blank"><img src="{%static 'image/img_f_banner_01.png'%}" alt="JCI 인증획득"></a></li>
+        <li><a href="https://www.cmcseoul.or.kr/page/board/news/464726" target="_blank"><img src="{%static 'image/img_f_banner_02.png'%}" alt="AAHRPP 국제인증 획득"></a></li>
+        <li><a href="https://www.cmcseoul.or.kr/page/board/news/459458" target="_blank"><img src="{%static 'image/img_f_banner_03.png'%}" alt="보건복지부 의료기관 평가 인증마크 획득"></a></li>
+        <li><a href="https://www.cmcseoul.or.kr/page/board/quality_care/474627" target="_blank"><img src="{%static 'image/img_f_banner_new_01.png'%}" alt="보건복지부 의료질평가 전 부문 최우수 등급 획득"></a></li>
+        <li><a href="https://www.cmcseoul.or.kr/page/board/news/472015" target="_blank"><img src="{%static 'image/img_f_banner_new_02.png'%}" alt="정보보호관리체계(ISMS)인증 "></a></li>
+    </ul>
+		</div>
+	</div>
+	<div class="main_quick">
+		<ul>
+			<li class="load">
+				<a href="/hospitalguide.map.sp">
+					<em>찾아오시는길</em>
+				</a>
+			</li>
+			<li class="parking">
+				<a href="/hospitalguide.parking.sp">
+					<em>주차장이용안내</em>
+				</a>
+			</li>
+			<li class="notice">
+				<a href="/page/board/voc/write">
+					<em>건의 및 불편접수</em>
+				</a>
+			</li>
+			<li class="doc">
+				<a href="/hospitalguide.issued_doc.sp">
+					<em>증명서발급안내</em>
+				</a>
+			</li>
+			<li class="health">
+				<!-- <a href="/page/board/health_counsel">
+							<em>건강상담</em>
+						</a> -->
+						<a href="/healthcare/index.do" target="_blank">
+							<em>평생건강증진센터</em>
+						</a>
+					</li>
+			<li class="funeral">
+				<a href="
+        http://kfh.catholicfuneral.co.kr
+    " target="_blank">
+					<em>장례식장</em>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+
+		$(function(){
+			//200128 비디오팝업 및 재생:start
+
+			var embed = $('.iframe').html();
+			        $('.video_popup_on').on('click',function(e){
+
+			e.preventDefault();
+
+			            $('#video_popup').addClass('on');
+
+			$('.iframe').html(embed)
+
+			        });
+
+
+
+			$('.video_xbtn').on('click',function(e){
+
+			e.preventDefault();
+
+			$('#video_popup_btn').removeClass('on');
+
+			});
+
+
+
+			        $('.video_close_btn').on('click',function(e){
+
+			e.preventDefault();
+
+			            $('#video_popup').removeClass('on');
+
+			$('.iframe').empty()
+
+			        });
+
+			//200128 비디오팝업 및 재생:end
+		});
+
+
+	</script>
+
+	<!--신년사 팝업 layer-->
+	<!-- <div class="new_main_cover_popwrap on">
+	<div class="new_main_cover_popbg"></div>
+	<div style="width: 657px;" class="new_main_cover_popcont">
+		<div class="new_main_sinyear"><a href="https://www.cmcseoul.or.kr/page/board/news/468435" target="_blank"><img alt="" src="/popup/images/2020_main_pop.jpg" /></a></div>
+		<div class="new_main_cover_popclosesec">
+		<div class="close">
+			<input type="checkbox" id="btn_today_close" />
+			<label class="new_main_cover_closeday" for="btn_today_close">오늘하루 그만보기</label>
+		</div>
+		<button class="new_main_cover_closebtn">닫기</button></div>
+	</div>
+	</div> -->
+		<!--20180110 내부시스템작업 팝업-->
+    <!--
+	<div class="new_main_cover_popwrap off" style="position: absolute; left: 0px; top: 105px; z-index: 1000; padding: 8px; border: 1px solid rgb(211, 211, 211); background: rgb(238, 238, 238);">
+		<img src="image/main/20180110_pop.jpg" style="border:1px solid #BBB;" alt="SKT 본인확인 서비스 내부시스템 작업">
+		<div style="margin-top:10px;text-align:center;">
+			<input type="checkbox" id="chkbox" name="chkbox" value="" style="vertical-align:middle;">  오늘 하루 이 창을 열지 않음 <button class="new_main_cover_closebtn"><b>[닫기]</b></button>
+		</div>
+	</div>
+    -->
+
+
+	<style type="text/css">
+	.new_main_cover_popwrap.off {display:none;}
+	</style>
+	<!--end-->
+
+	<script type="text/javascript">
+		//해당 의료진의 이미지가 없을시
+		function noImageHeaderError( obj ){
+		    if( obj !=null){
+		      obj.src = "/images/main/icon_logo.png"; // 변경하고자하는 이미지를 넣는다.
+		    }
+		}
+
+		// 20180110 내부시스템작업 팝업
+		$(function(){
+			$(".new_main_cover_closebtn").bind("click", function(){
+				if($("#btn_today_close")[0].checked) {
+					setCookie("main_banner_hide", "Y", 1);
+				}
+
+				$(".new_main_cover_popwrap").addClass("off");
+			});
+		});
+
+		var mainBannerHideYN = getCookie("main_banner_hide");
+		if (mainBannerHideYN && mainBannerHideYN == 'Y') {
+		$(".new_main_cover_popwrap").addClass("off");
+		}
+		//end
+
+
+		// 채용정보 상세 이동
+		function fnGoRecruitDetail(endDate, detailUrl) {
+			if(endDate && endDate.length > 0) {
+			    if(moment(endDate, 'YYYYMMDD').isBefore(moment())) {
+			        alert("마감된 게시글입니다.");
+			        return;
+				}
+				else {
+			        location.href = detailUrl;
+				}
+			}
+			else {
+			    location.href = detailUrl;
+			}
+		}
+
+		$(function(){
+			// 띠배너 slider
+			$('.main_top_banner').css({
+				'background-color':$('.top-banner .banner_inner_wrap').find('li').eq(0).attr('bg_color-data')
+			});
+			var top_banner_slider = $('.top-banner').accSlider({
+				'auto':true,
+				'arrowBtn':false,
+				'mode':'normal',
+				onSliderStart:function(num){
+					$('.main_top_banner').css({
+						'background-color':$('.top-banner .banner_inner_wrap').find('li').eq(num).attr('bg_color-data')
+					});
+				}
+			});
+
+
+
+			$('.top-banner .close_wrap').on('click','.top_banner_close',function(){
+				TweenMax.to($('.main_top_banner'),.8,{
+					'height':0,
+					'ease':'easeOutExpo',
+					onComplete:function(){
+						top_banner_slider.stopSlide();
+						$('.main_top_banner').css('display','none');
+					}
+				});
+			});
+			//메인 비주얼 slider
+			var main_slider = $('.visual-banner').accSlider({
+				'auto':true
+			});
+
+			viewBandBanner();
+
+			$('#top_banner_chk').on('click', function(){
+				if($('#top_banner_chk').is(":checked")) {
+					setCookie( "band", "done" , 1);
+					$(".top_banner_close").click();
+				}
+			});
+		});
+		// 띠배너보기
+		function viewBandBanner() {
+			var blnCookie = getCookie( "band" );
+			if(blnCookie != "done") {
+				$(".main_top_banner").show();
+			}
+		}
+		// 쿠키 가져오기
+		function getCookie(cName) {
+			cName = cName + '=';
+			var cookieData = document.cookie;
+			var start = cookieData.indexOf(cName);
+			var cValue = '';
+			if(start != -1) {
+				start += cName.length;
+				var end = cookieData.indexOf(';', start);
+				if(end == -1)end = cookieData.length;
+				cValue = cookieData.substring(start, end);
+			}
+			return unescape(cValue);
+		}
+		// 쿠키 설정하기
+		function setCookie(name, value, expiredays) {
+			var todayDate = new Date();
+			todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
+			if(todayDate > new Date()) {
+				expiredays = expiredays - 1;
+			}
+			todayDate.setDate( todayDate.getDate() + expiredays );
+			document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+		}
+		// 첫 방문 전화예약 팝업열기
+		function fnOpenQuickAppointmentPopup(target) {
+
+
+            var sdate = new Date("2022/01/29 11:00");
+            var edate = new Date("2022/02/03 15:59");
+			var cdate = new Date();
+
+			if (sdate <= cdate && edate >= cdate) {
+				//alert('★명절 연휴 후 전화상담 문의가 많을 것으로 예상되어 첫 방문 고객 예약상담은 연휴 기간 동안 마감합니다.★');
+				//alert('★명절(추석,구정) 연휴 후 전화상담 문의가 많을것으로 예상되어 첫방문 고객 예약 상담은 연휴기간동안 마감합니다.★');
+				alert('구정 연휴로 인해 첫방문 예약상담 기능이 1/29(토) 오전 11시 ~ 2/3(목) 오후 16시 기간 동안 사용이 불가합니다.');
+				return;
+			}
+
+            $("#per_info_check").prop("checked", "");
+            var quickInfo = fnGetQuickAppointmentInfo();
+            if(quickInfo.name.length < 2) {
+                window.cmc.util.alert('이름을 입력해 주세요.');
+                $('input[name=quick_name]').focus();
+                return false;
+            } else if(cmc.validate.tel(quickInfo.hpNo) != true && cmc.validate.phone(quickInfo.hpNo) != true) {
+                window.cmc.util.alert('전화번호를 정확히 입력해 주세요.');
+                $('input[name=quick_hp_no]').focus();
+                return false;
+            }
+            window.per_info_layer_pop = window.cmc.popup.open({
+                popup: $('#per_info_layer_pop')[0],
+                openBtn: target,
+				success: function(){
+                    fnQuickAppointment();
+				}
+            });
+		}
+		// 첫 방문 전화예약
+		function fnQuickAppointment() {
+		    if($("#per_info_check").is(":checked") == false) {
+                window.cmc.util.alert('개인정보 수집 · 이용에 동의에 체크해주시기 바랍니다.');
+                $('#per_info_check').focus();
+                return false;
+			}
+
+			// 2020-09-25
+			// 서울성모 추석연휴 임시 수정
+			alert('◆ 3일 이상 연휴 시 전화방문은 지연될수 있습니다. 양해바랍니다.\n\n◆서울성모병원을 처음 방문하는 분을 위한 간편예약서비스이므로 본원의 외래나 응급실을 이용한 적이 있으시다면 ☎1588-1511로 문의 바랍니다.');
+
+			cmc.popup.dismiss(window.per_info_layer_pop);
+            var quickInfo = fnGetQuickAppointmentInfo();
+            // 예약 하기
+            /*$('input[name=quick_name]').val('');
+            $('input[name=quick_hp_no]').val('');*/
+            window.cmc.util.api({
+                type: 'POST',
+                url: '/api/appointment/quick',
+                data: {
+                    name: quickInfo.name,
+                    hpNo: quickInfo.hpNo
+                },
+                success: function(data) {
+                    var result = data.result;
+                    if(result == '1' || result == 'Y') {
+                        window.cmc.util.alert('전화예약 요청이 완료되었습니다. 빠른 시일내에 연락드리도록 하겠습니다.');
+                    } else if(result == '2' || result == 'N') {
+                        window.cmc.util.alert('이미 전화예약이 되어 있습니다. \n 접수 후 1시간 이내에는 재 등록이 되지 않습니다. \n 기타 문의는 콜센터로  부탁드립니다');
+                    } else if(result == '3') {
+                        window.cmc.util.alert('올바른 전화번호를 입력해주세요.');
+                    } else {
+                        window.cmc.util.alert('전화예약 요청이 완료되지 않았습니다. 콜센터에 문의 부탁드립니다.');
+                    }
+                    fnInitQuickAppointmentInfo();
+                },
+                fail: function() {
+                    window.cmc.util.alert('전화예약 요청이 완료되지 않았습니다. 콜센터에 문의 부탁드립니다.');
+                }
+            });
+        }
+        // 첫 방문 전화예약 입력 파라미터 가져오기
+        function fnGetQuickAppointmentInfo() {
+            var quickInfo = {
+                name: $('input[name=quick_name]').val(),
+                hpNo: $('input[name=quick_hp_no]').val()
+            };
+            if(quickInfo.hpNo.indexOf('-') < 0) {
+                if(quickInfo.hpNo.length == 9) {	// ex: 021231234
+                    quickInfo.hpNo = quickInfo.hpNo.substring(0,2) + '-' + quickInfo.hpNo.substring(2,5) + '-' + quickInfo.hpNo.substring(5);
+				} else if(quickInfo.hpNo.length == 10) {	// ex: 0321231234
+                    quickInfo.hpNo = quickInfo.hpNo.substring(0,3) + '-' + quickInfo.hpNo.substring(3,6) + '-' + quickInfo.hpNo.substring(6);
+				} else if(quickInfo.hpNo.length == 11) { // ex: 01012341234
+                    quickInfo.hpNo = quickInfo.hpNo.substring(0,3) + '-' + quickInfo.hpNo.substring(3,7) + '-' + quickInfo.hpNo.substring(7);
+                }
+			}
+            return quickInfo;
+		}
+		// 첫 방문 전화예약 입력 파라미터 초기화
+		function fnInitQuickAppointmentInfo() {
+            $('input[name=quick_name]').val('').focus();
+            $('input[name=quick_hp_no]').val('').focus();
+            $('#quick_appointment_btn').focus();
+		}
+		// 건강매거진 열기
+		function fnDetailView(magType, magNo, videoUrl) {
+			if(magType === 'V') {
+				// 동영상 새창 open
+				window.open(videoUrl);
+			}
+			else {
+				location.href = '/page/health/magazine/detail/' + magNo + window.location.search;
+			}
+		}
+		// 건강TV 열기
+		function fnTvDetailView(tvNo, tvUrl) {
+			if (tvUrl != '') {
+				window.open(tvUrl);
+			}
+		}
+	</script>
+
+
+    <!-- #FOOTER -->
+    <footer id="footer_wrap">
+    <a href="#container" class="top_btn"><img src="{%static 'image/top_btn.jpg'%}" alt="상단으로 이동"/></a>
+    <div class="cmc_network">
+        <div class="network_wrap">
+            <a href="javascript:;" class="btn_open">
+                <em>CMC네트워크</em>
+            </a>
+            <div class="network_cont_wrap">
+                <div class="inner">
+                    <ul class="d_1">
+                        <li class="d_1_1">
+							<span class="title">
+								<em class="blind">의료기관</em>
+							</span>
+                            <ul class="d_2">
+                                <li>
+                                    <a href="http://www.cmc.or.kr/" target="_blank">
+                                        <em>가톨릭중앙의료원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcseoul.or.kr/" target="_blank">
+                                        <em>서울성모병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcsungmo.or.kr/" target="_blank">
+                                        <em>여의도성모병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcujb.or.kr/" target="_blank">
+                                        <em>의정부성모병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcbucheon.or.kr/" target="_blank">
+                                        <em>부천성모병원</em>
+                                    </a>
+                                </li>
+                                <!--li>
+                                    <a href="http://www.cmcbaoro.or.kr/" target="_blank">
+                                        <em>성바오로병원</em>
+                                    </a>
+                                </li-->
+                                <li>
+                                    <a href="http://www.cmcep.or.kr/" target="_blank">
+                                        <em>은평성모병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcism.or.kr/" target="_blank">
+                                        <em>인천성모병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcvincent.or.kr/" target="_blank">
+                                        <em>성빈센트병원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcdj.or.kr/" target="_blank">
+                                        <em>대전성모병원</em>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="http://www.cmcntrh.or.kr/" target="_blank">
+                                        <em>국립교통재활병원</em>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </li>
+                        <li class="d_1_2">
+							<span class="title">
+								<em class="blind">교육기관</em>
+							</span>
+                            <ul class="d_2">
+                                <li>
+                                    <a href="http://www.catholicfound.org/cmm/main/mainPage.do" target="_blank">
+                                        <em>학교법인 가톨릭학원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://songsin.catholic.ac.kr/site/songsin/main.do" target="_blank">
+                                        <em>가톨릭대학교 성신교정</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.catholic.ac.kr" target="_blank">
+                                        <em>가톨릭대학교 성심교정</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://songeui.catholic.ac.kr/" target="_blank">
+                                        <em>가톨릭대학교 성의교정</em>
+                                    </a>
+                                    <ul class="d_3">
+                                        <li>
+                                            <a href="http://medicine.catholic.ac.kr/" target="_blank">
+                                                <em>의과대학,의학전문대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://nursing.catholic.ac.kr/" target="_blank">
+                                                <em>간호대학</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://songeui.catholic.ac.kr/gscuk/" target="_blank">
+                                                <em>대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://songeui.catholic.ac.kr/gsph/" target="_blank">
+                                                <em>보건대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://songeui.catholic.ac.kr/sohmp/" target="_blank">
+                                                <em>의료경영대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://songeui.catholic.ac.kr/gscds/" target="_blank">
+                                                <em>임상치과대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://songeui.catholic.ac.kr/gscn/" target="_blank">
+                                                <em>임상간호대학원</em>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://songeui.catholic.ac.kr/gslife/" target="_blank">
+                                                <em>생명대학원</em>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d_1_3">
+							<span class="title">
+								<em class="blind">연구기관</em>
+							</span>
+                            <ul class="d_2">
+                                <li>
+                                    <a href="http://ibi.cmc.or.kr/" target="_blank">
+                                        <em>의생명산업연구원</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cmcuhealth.or.kr/" target="_blank">
+                                        <em>가톨릭U헬스케어사업단</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cihm.catholic.ac.kr/" target="_blank">
+                                        <em>가톨릭의료경영연구소</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://cmccrcc.cmcnu.or.kr" target="_blank">
+                                        <em>가톨릭임상연구지원센터</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://eirb.cmcnu.or.kr" target="_blank">
+                                        <em>CMC임상연구심사위원회(IRB)</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://cmcohrp.cmcnu.or.kr" target="_blank">
+                                        <em>CMC연구윤리사무국(OHRP)</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.hansen.re.kr/" target="_blank">
+                                        <em>한센병연구소</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.rhrc.re.kr/" target="_blank">
+                                        <em>류마티스연구센터</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://cmcbiobank.cmc.or.kr/" target="_blank">
+                                        <em>가톨릭인체유래물중앙은행</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_cont">
+        <div class="inner">
+            <div class="btn_list">
+                <ul class="top">
+                    <li>
+                        <a href="https://www.cmcseoul.or.kr/healthcare/index.do" target="_blank">평생건강증진센터</a>
+                    </li>
+                    <li>
+                        <a href="https://www.cmcseoul.or.kr/cancer/index.do" target="_blank">암병원</a>
+                    </li>
+                    <li>
+                        <a href="https://www.cmcseoul.or.kr/page/department/C/328/1" target="_blank">치과병원</a>
+                    </li>
+                    <li>
+                        <a href="https://www.chh.or.kr/page/main" target="_blank">혈액병원</a>
+                    </li>
+                    <li>
+                        <a href="https://www.cmcseoul.or.kr/ccv/" target="_blank">심뇌혈관병원</a>
+                    </li>
+                    <li>
+                        <a href="http://cmcrefer.cmcnu.or.kr/index.do" target="_blank">진료협력센터</a>
+                    </li>
+                    <li>
+                        <a href="http://ctc001.cmcnu.or.kr" target="_blank">IRB</a>
+                    </li>
+
+                    <li>
+                        <a href="http://kfh.catholicfuneral.co.kr/cmm/main/mainPage.do" target="_blank">장례식장</a>
+                    </li>
+                </ul>
+
+                <ul class="top">
+                    <li>
+                        <a href="#">채용정보</a>
+                    </li>
+                    <li>
+                        <a href="#">대관신청</a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">전공의모집</a>
+                    </li>
+                    <li>
+                        <a href="#">CMC 영성과 비전</a>
+                    </li>
+                    <li>
+                        <a href="#">겨자씨 키움센터</a>
+                    </li>
+                </ul>
+
+                <ul class="bottom">
+                    <li>
+                        <a href="#">비급여진료비용검색</a>
+                    </li>
+                    <li>
+                        <a href="#">환자권리장전</a>
+                    </li>
+                    <li>
+                        <a href="#" style="font-weight: bold;color: #ff5a00;">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일무단수집거부</a>
+                    </li>
+                    <li>
+                        <a href="#">서울성모병원 윤리강령 및 행동강령</a>
+                    </li>
+                    <li>
+                        <a href="#">건의 및 불편접수</a>
+                    </li>
+                    <li>
+                        <a href="#" title="새창열기" target="_blank">입찰공고</a>
+                    </li>
+                    <li>
+                        <a href="#" title="새창열기" target="_blank">오시는 길</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="community">
+                <ul class="sns" style="margin-right:20px;">
+                    <li class="blog">
+                        <a href="#" target="_blank" title="네이버블로그">
+                            <em class="blind">네이버블로그</em>
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="#" target="_blank" title="페이스북">
+                            <em class="blind">페이스북</em>
+                        </a>
+                    </li>
+                    <li class="insta">
+                        <a href="#" target="_blank" title="인스타그램">
+                            <em class="blind">인스타그램</em>
+                        </a>
+                    </li>
+                    <li class="youtube">
+                        <a href="#" target="_blank" title="유튜브">
+                            <em class="blind">유튜브</em>
+                        </a>
+                    </li>
+                    <li class="post">
+                        <a href="#" target="_blank" title="네이버포스트">
+                            <em class="blind">네이버포스트</em>
+                        </a>
+                    </li>
+                    <li class="googleplay">
+                        <a href="#" target="_blank" title="구글플레이스토어">
+                            <em class="blind">구글플레이스토어</em>
+                        </a>
+                    </li>
+                    <li class="appleplay">
+                        <a href="#" target="_blank" title="애플플레이스토어">
+                            <em class="blind">애플플레이스토어</em>
+                        </a>
+                    </li>
+                </ul>
+                <dl>
+                    <dt>대표전화</dt>
+                    <dd>1588-1511(해외 연결 시 82-2-2258-1511)</dd>
+                </dl>
+                <dl>
+                    <dt>평생건강증진센터</dt>
+                    <dd>1588-8668</dd>
+                </dl>
+            </div>
+            <div class="address">
+                <address>서울시 서초구 반포대로 222 (06591)</address>
+                <span>copyright(c) 2017 The Catholic University of Korea, Seoul ST. Mary’s Hospital. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--// #FOOTER -->
+</div>
+<!--// WRAP -->
+</body>
+</html>

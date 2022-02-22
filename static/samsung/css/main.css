@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+#mainCont .visual { overflow:hidden; position:relative; height:483px;}
+#mainCont .visual > div { position:absolute; top:0px; left:0px; width:959px;}
+#mainCont .visual > div > div { overflow:hidden; float:left; position:relative; width:239.25px; height:483px; text-align:center;}
+#mainCont .visual > div a { display:block; overflow:hidden; height:100%; color:#fff;}
+#mainCont .visual > div h2 { position:relative; z-index:3; height:66px; padding:70px 0px 0px 0px;  line-height:1; font-size:24px;}
+#mainCont .visual > div h2.on { position:absolute; top:60px; left:0; width:100%; padding:0 0 0 0px; text-align:center; opacity:0; filter:alpha(opacity=0);}
+#mainCont .visual > div p { position:relative; z-index:3; font-size:13px; font-weight:bold;}
+#mainCont .visual > div p img { position:absolute; top:25px; left:50%; margin-left:-75px;}
+#mainCont .visual > div p img + img { display:none;}
+#mainCont .visual > div a > span { display:none; position:absolute; top:0px; left:0px; z-index:4; width:35px; height:100%; background:url('../images/main/bgShadow.png') repeat-y;}
+#mainCont .visual > div a > span.pattern { width:100%; background:url('../images/main/visualPattern.png');}
+#mainCont .visual > div a > span.left { display:block;}
+#mainCont .visual > div a > span.right { display:block; left:100%; margin-left:-35px; background:url('../images/main/bgShadowRight.png') repeat-y;}
+
+#mainCont .visual .vis01 { background:url('../images/main/imgMainVisual01.jpg') center center;}
+#mainCont .visual .vis02 { background:url('../images/main/imgMainVisual02.jpg') 35% center;}
+#mainCont .visual .vis03 { background:url('../images/main/imgMainVisual03.jpg') center center;}
+#mainCont .visual .vis04 { background:url('../images/main/imgMainVisual04.jpg') center center;}
+
+#mainCont .mainMenu { overflow:hidden; margin-top:45px;}
+#mainCont .mainMenu ul {}
+#mainCont .mainMenu ul li { float:left; width:20%; height:130px; background:url('../images/main/bgLine.jpg') no-repeat 0px center;}
+#mainCont .mainMenu ul li:first-child { background:none;}
+#mainCont .mainMenu ul li a { display:block; padding-top:85px; text-align:center; font-size:15px; font-weight:bold;}
+
+#mainCont .mainMenu ul .menu01 a { background:url('../images/main/icon01.gif') no-repeat center 0px;}
+#mainCont .mainMenu ul .menu02 a { background:url('../images/main/icon02.gif') no-repeat center 0px;}
+#mainCont .mainMenu ul .menu03 a { background:url('../images/main/icon03.gif') no-repeat 55% 0px;}
+#mainCont .mainMenu ul .menu04 a { background:url('../images/main/icon04.gif') no-repeat 37% 0px;}
+#mainCont .mainMenu ul .menu05 a { background:url('../images/main/icon05.gif') no-repeat 45% 0px;}
+
+
+/* 컨텐츠 영역 */
+#lnb { float:left; width:180px; margin-top:90px; background:#20439e;}
+#lnb h2 { padding:20px 0 20px 15px; color:#fff; font-size:20px;}
+#lnb h2 span { font-size:10px; color:#90a1cf;}
+#lnb ul { background:#f0f0f0;}
+#lnb ul li { border:1px solid #cdcdcd; border-width:0 1px 1px 1px;}
+#lnb ul li a { display:block; padding:15px 10px; color:#666; font-weight:bold;}
+#lnb ul li.on { background:#fff;}
+#lnb ul li.on a {color:#333;}
+
+.brdContents { border:1px solid #000; margin-bottom:60px; border-width:1px 0px;}
+.brdContents tr {}
+.brdContents tr:first-child th,
+.brdContents tr:first-child td { border-top:0px;}
+.brdContents th { padding:10px; border:1px solid #ddd; border-width:1px 0 0 0; background:#fafafa;}
+.brdContents td { padding:10px; border:1px solid #ddd; border-width:1px 0 0 1px;}
+.brdContents td a:hover { color:#20439e;}
+
+.infoView { min-height:195px; padding-left:160px; margin-top:50px;}
+.infoView.hello { margin-bottom: 40px; background:url('../images/content/hellow20150226.jpg') no-repeat;}
+.infoView.zine { background:url('../images/content/zine201412.jpg') no-repeat;}
+.infoView.health { background:url('../images/content/health201412.jpg') no-repeat;}
+.infoView h3 { margin-bottom:10px; font-size:18px;}
+.infoView h3 a { display:inline-block; margin-left:10px; margin-top:-2px; padding:5px 15px; border:1px solid #aeaeae; font-size:13px; color:#444;
+background: rgb(253,253,253); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(253,253,253,1) 0%, rgba(240,240,240,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,253,253,1)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(240,240,240,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(253,253,253,1) 0%,rgba(240,240,240,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+}
+
+#content > h2 { margin-top:36px; padding-bottom:5px; font-size:30px; border-bottom:3px solid #e1e1e1;}
+#content > h3 { padding-left:20px; margin-bottom:30px; font-size:15px; background:url('../images/common/icoH3.gif') no-repeat 0px 5px;}
+#content > h3 span { display:inline-block; margin-left:10px; font-size:12px; color:#20439e;}

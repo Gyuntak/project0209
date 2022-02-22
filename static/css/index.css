@@ -1,0 +1,510 @@
+/* index.css */
+
+/* header */
+
+body {
+    color: #000;
+    font-size: 16px;
+    word-spacing: -0.5px;
+    letter-spacing: -1px;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+    margin: 0;
+}
+
+
+b, h1, h2, h3, h4, h5, h6, strong, th,a {
+    font-family: 'Noto Sans KR Bold','Noto Sans CJK KR','Noto Sans KR','맑은 고딕',sans-serif;
+    font-weight: 700;
+    color: #000
+}
+
+
+.disableOutline * {
+    outline: 0!important;
+}
+
+
+#header.headerInto h1 a {
+    top: 28px;
+    background: url(../image/logo1.jpeg) no-repeat 0 0;
+}
+
+
+#header.headerInto .topMenuWrap {
+    top: 28px;
+    right: 5px;
+    padding-right: 10%;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    width: 100%;
+    height: 129px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+#header h1 a {
+    display: block;
+    position: relative;
+    margin: auto;
+   
+
+
+}
+
+#header.headerInto, #header.headerInto h1 {
+    height: 81px;
+}
+
+#header.headerInto h1 a {
+    top: 28px;
+    background: url(../image/logo1.jpeg) no-repeat 0 0;
+
+}
+
+#header{
+    text-align: center;
+    position: relative;
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+
+#header h1 a {
+    
+    display: block;
+    position: relative;
+    top: 20px;
+    width: 239px;
+    height: 25px;
+    margin-left: 0%;
+    background: url(../image/logo1.jpeg) no-repeat 0 0;
+    
+}
+
+
+
+#header.headerInto h1 {
+    
+    height:79px;
+}
+
+#header.headerInto .topMenuWrap {
+    top: 28px;
+    right: 5px;
+}
+
+/* topMenu */
+
+.topMenuWrap {
+    position: absolute;
+    top: 18px;
+    right: 9px;
+    z-index: 100;
+}
+
+.topMenuWrap li, .topMenuWrap ul {
+    float: left;
+}
+
+.topMenu .languageBtn {
+    margin-right: 0;
+}
+.topMenu li {
+    margin-right: 13px;
+}
+.topMenuWrap li, .topMenuWrap ul {
+    float: left;
+}
+
+
+.disableOutline * {
+    outline: 0!important;
+}
+* {
+    font-family: 'Noto Sans KR Regular','Noto Sans CJK KR','Noto Sans KR','맑은 고딕',sans-serif;
+    font-weight: 400;
+}
+* {
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.languageBtn>a {
+    position: relative;
+    padding-right: 25px;
+}
+.topMenu a {
+
+    color: black;
+}
+
+.a { 
+    padding-right: 25px;
+    font-size: medium;
+    color: black;
+}
+
+
+a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+.disableOutline * {
+    outline: 0!important;
+}
+.gnbIntro {
+    position: absolute;
+    top: 40px;
+    left: 258px;
+}
+
+.gnbIntro li {
+    display: inline-block;
+    margin: 5px;
+}
+
+
+* {
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:-webkit-any-link {
+    
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+* {
+    font-family: 'Noto Sans KR Regular','Noto Sans CJK KR','Noto Sans KR','맑은 고딕',sans-serif;
+    font-weight: 400;
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    word-spacing: -0.5px;
+    letter-spacing: -1px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#div.innerWrap {
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+#gnb, .innerWrap {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+
+
+
+#content {
+    word-spacing: 0;
+    letter-spacing: -.5px;
+}
+
+.introInner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.introInner {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px
+}
+
+.introInner > p {
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: -1.4px;
+    text-align: center;
+}
+
+.introInner > p span {
+    display: block;
+    margin-top: -4px;
+    color: #888;
+    font-size: 16px;
+    letter-spacing: -.4px;
+    text-align: center;
+}
+
+
+/* main */
+#content.mainIntroContent {
+    width: 100%;
+    min-height: 765px;
+    margin-top: 120px;
+    padding-top: 50px;
+    padding-right: 0;
+    background: url('../image/bg_introCont.jpg') no-repeat center top;
+    
+}
+
+.mIntroList {
+    margin-top: 50px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.mIntroList .nth01 {
+    background-color: #0aa1e4;
+    /* background-image: url(/image/병원삼성.jpg) */
+}
+
+.mIntroList a {
+    display: inline-block;
+    vertical-align: top;
+    width: 367px;
+    height: 264px;
+}
+a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mIntroList .nth02 {
+    background-color: #f596b3;
+}
+
+.mIntroList .nth02 p:before, .mIntroList .nth02 p > .b {
+    width: 118px;
+    height: 61px;
+    margin-left: -59px;
+    background-position: -137px -23px;
+}
+
+.mIntroList .nth03 {
+    width: 366px;
+    background-color: #4282e0;
+}
+
+.mIntroList .nth03 p:before, .mIntroList .nth03 p > .b {
+    width: 117px;
+    height: 57px;
+    margin-left: -58.5px;
+    background-position: -256px -24px;
+}
+
+.mIntroList .nth04 {
+    background-color: #55c6c8;
+}
+.mIntroList .nth04 p:before, .mIntroList .nth04 p > .b {
+    width: 131px;
+    height: 62px;
+    margin-left: -65.5px;
+    background-position: -2px -88px;
+}
+
+
+.mIntroList .nth05 {
+    background-color: #b385d4;
+}
+
+.mIntroList .nth05 p:before, .mIntroList .nth05 p > .b {
+    width: 147px;
+    height: 62px;
+    margin-left: -73.5px;
+    background-position: -135px -88px;
+}
+
+
+.mIntroList .nth06 {
+    width: 366px;
+    background-color: #f8bd82;
+}
+
+
+.mIntroList span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    letter-spacing: -.28px;
+}
+.mIntroList p, .mIntroList span {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+
+
+.mIntroList .nth03 p:before, .mIntroList .nth03 p > .b {
+    width: 117px;
+    height: 57px;
+    margin-left: -58.5px;
+    background-position: -256px -24px;
+}
+
+
+.mIntroList p {
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.mIntroList p, .mIntroList span {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.footerInfo {
+    padding: 26px 0 60px;
+    border-top: 1px solid #22263b;
+}
+
+#footer.footerIntro .footerInfo {
+    padding: 30px 0;
+    background-color: #22263b;
+}
+
+.languageList {
+    position: absolute;
+    top: -10px;
+    right: 140px;
+}
+
+#footer.footerIntro .footerAddress {
+    padding: 25px 0 35px;
+    text-align: center;
+    background-color: #31354e;
+}
+
+.footerAddress .copyright {
+    margin-top: 0;
+}
+
+
+.languageList  {
+    float: le;
+    color: white;
+    display: block;
+    width: 85px;
+    height: 22px;
+    
+}
+
+
+.copyright, .footerInfo address p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+.innerWrap {
+    padding: 0 10px;
+}
+
+
+
+#gnb, .innerWrap {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+
+
+.imgLogo{
+    padding-top: 10%; 
+    display: block;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+}
+
+
+
+.mIntroList .nth01:hover,.mIntroList .nth01:focus{
+    background-image:url(../image/삼성서울병원.jpg)}
+
+
+
+.mIntroList .nth02:hover,.mIntroList .nth02:focus{
+    background-image:url(../image/성모.jpeg)}
+    
+
+.mIntroList .nth03:hover,.mIntroList .nth03:focus{
+        background-image:url(../image/세브란스.jpg)}
+
+
+.mIntroList .nth04:hover,.mIntroList .nth04:focus{
+        background-image:url(../image/이대\ 목동병원.jpg)}
+
+
+.mIntroList .nth05:hover,.mIntroList .nth05:focus{
+        background-image:url(../image/차병원.jpg)}
+
+.mIntroList .nth06:hover,.mIntroList .nth06:focus{
+        background-image:url(../image/아산.jpg)}

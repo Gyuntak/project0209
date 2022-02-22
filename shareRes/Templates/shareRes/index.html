@@ -1,0 +1,251 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+    <!-- Boot strap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+        .jumbotron{
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+        .content{
+            min-height: 60%;
+            margin: auto;
+            text-align : center;
+        }
+        .row{
+            margin:0;
+            padding:0;
+        }
+        .subTitle{
+            font-size:17px;
+        }
+        .addBtn{
+            width: 400px;
+            margin: 10px;
+        }
+        .restaurantInfoDiv{
+            margin-left:20%;
+            float:left;
+        }
+        .infoHeaderDiv{
+            border-bottom: 3px solid black;
+            float:left;
+        }
+        .infoHeaderDiv h1{
+            margin:0;
+        }
+        .categoryAddDiv{
+            float:left;
+            margin-left:25px;
+        }
+        .categoryAddBtn{
+            height: 40px;
+            width: 40px;
+            font-size:20px;
+            padding:3px;
+
+        }
+        .restaurantListDiv{
+            margin-top: 25px;
+            width: 500px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .active{
+            color: #fff;
+            background-color: #337ab7;
+        }
+        .deactive{
+            color: #337ab7;
+            background-color: #fff;
+        }
+        .category{
+            position: relative;
+            display: block;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .deactive:hover{
+            background-color: #D3D3D3;
+        }
+        .restaurantList{
+            display:none;
+        }
+        ul.restaurantList li{
+            background-color:white;
+        }
+        ul.restaurantList li:hover{
+            background-color:#D3D3D3;
+            cursor: pointer;
+        }
+        .input-group{
+            margin: 0px;
+        }
+
+        .emailDiv{
+            float:left;
+            margin-left:25px;
+        }
+        .emailContentGroup{
+            margin:5px;
+        }
+        .emailHeaderDiv h1{
+            margin:0;
+        }
+        .sendBtn{
+            width: 400px;
+            margin: 10px;
+        }
+        .emailContentGroup h4{
+            font-weight: bold;
+            margin:5px;
+        }
+        .emailContentHeader{
+            margin: 10px;
+        }
+        .emailContent{
+            margin: 10px;
+
+        }
+        .inputReceiver{
+            width: 350px;
+        }
+        .inputReceiverSub{
+            font-size: 12px;
+            font-weight: 100;
+        }
+        .inputTitle{
+            width: 350px;
+        }
+        .inputContent{
+            resize: none;
+        }
+
+
+        .panel-footer{
+            margin-top: 50px;
+            height: 10%;
+        }
+
+        .header {
+            text-align: center;
+           
+        }
+
+
+        logo {
+            
+        }
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.restaurantListDiv>li').click(function(){
+                if ($(this).hasClass('active')){
+                    $(this).addClass('deactive')
+                    $(this).removeClass('active')
+                    $(this).next('ul').slideUp();
+                }else{
+                    $(this).removeClass('deactive')
+                    $(this).addClass('active')
+                    $(this).next('ul').slideDown();
+                }
+
+                
+            })
+        });
+
+    </script>
+    <title></title>
+</head>
+<body>
+    <div class="header">
+    <a href=http://127.0.0.1:8000/ class="hideTxt">
+        <img src="{%static './image/logo1.jpeg'%}" class="logo">
+   </a> </div>
+
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" img src =>게시판</a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">로그아웃</a></li>
+               
+            </div>
+        </nav>
+
+       
+        <div class="content">
+            <div class="row">
+                <form action="" method="POST" onsubmit="return emailCheckForm();"> {% csrf_token %}
+                    <div class="restaurantInfoDiv ">
+                        <div class="row">
+                            <div class="infoHeaderDiv">
+                                <h1>병원 목록 <small class="subTitle">상세내용을 보려면 클릭하세요.</small></h1>
+                            </div>
+                            <div class="categoryAddDiv">
+                                    <a href="categoryCreate/" class="categoryAddBtn btn btn-primary" role="button">+</a>
+                            </div>
+                        </div>
+                        <ul class="restaurantListDiv nav nav-pills nav-stacked">
+                            {% for category in categories %}
+                            <li class="category deactive">{{ category.category_name }}</li>
+                            <ul class="restaurantList">
+
+                                {% for res in restaurants %}
+                                {% if res.category == category %}
+                                <div class="input-group">
+                                    <span class="input-group-addon">{{ res.id }}
+                                        <a href="restaurantDetail/{{res.id}}">
+                                        </a>
+                                    </span>
+                                    <a href="restaurantDetail/{{res.id}}">
+                                        <input name="res{{res.link}}" id="res{{res.link}}" type="text" class="form-control" disabled style="cursor: pointer;" value="{{res.restaurant_link}}">
+                                    </a>
+                                </div>
+
+                                {% endif %}
+                                {% endfor %}
+
+
+                            </ul>
+                            {% endfor %}
+                        </ul>
+                        <a href="restaurantCreate/" class="sendBtn btn btn-primary" role="button">후기 작성하기</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

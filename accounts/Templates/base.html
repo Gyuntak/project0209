@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+
+
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- project CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> -->
+    <!--직접 작성한 css, js-->
+    <meta charset="UTF-8">
+		<title>병원 인트로</title>
+		<link rel="stylesheet" href="{%static 'css/index.css'%}" type="text/css">
+		<script src="{%static 'js/jquery-3.5.1.min.js'%}"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="{% static 'bootstrap.min.js' %}"></script>
+
+        </script>
+    <title>병원인트로</title>
+</head>
+<body>
+
+	<a href="#content" class="skipToContent"></a>
+		<!-- header -->
+		<header id="header" class="headerInto" style="position: fixed; top: 0px ;">
+			<a href="./index2.html" class="hideTxt">
+				<img src="{%static './image/logo1.jpeg'%}" class="logo">
+			</a>
+<!-- {% include "navbar.html" %} -->
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+
+<!--필요한 script가 있다면 이곳에 삽입 보통은 외부에서 링크진행하므로 없음
+{% block script %}
+{% endblock %}
+-->
+</body>
+</html>

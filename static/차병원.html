@@ -1,0 +1,744 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" type="text/css" href="gate/css/common.css">
+<link rel="stylesheet" type="text/css" href="gate/css/layout.css">
+
+<script type="text/javascript" src="gate/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="gate/js/ui.js"></script>
+<!-- <script src="gate/js/ui.js"></script> -->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="gate/css/nanumgothic.css">
+<![endif]-->
+
+
+<meta name="keywords" content="인간존중, 생명사랑을 실천하는 연구중심의 글로벌 종합병원입니다." />
+<meta name="description" content="인간존중, 생명사랑을 실천하는 연구중심의 글로벌 종합병원입니다." />
+<meta name="naver-site-verification" content="fab8b79d8f0cd0668ca91dd632098bdb7e5fca9b" />
+<meta name="google-site-verification" content="LTT3Q73G8qzPDojJMtDHGwnjm24RqWGGSnxtsHjhFfk" />
+
+<title>참 좋은 병원, 차병원</title>
+<link rel="shortcut icon" type="image/x-icon" href="/gate/img/common/cha.ico">
+
+    <script type="application/ld+json">
+        {
+         "@context": "http://schema.org",
+         "@type": "Person",
+         "name": "차병원",
+         "url": "http://www.chamc.co.kr",
+         "sameAs": [
+           "http://blog.naver.com/chagroup",
+           "https://www.facebook.com/chahospital",
+           "https://www.youtube.com/channel/UCHDoVNV6NkgjuiCyLIMmdqQ",
+           "http://post.naver.com/chagroup",
+	       "https://tv.naver.com/chahospital",
+           "https://www.instagram.com/chamedofficial"
+        ]
+        }
+    </script>
+
+<script type="text/javascript">
+
+	$(function () {
+		size_func();
+        h3_func();
+	});
+
+
+	$(window).resize(function(){
+		size_func();
+		h3_func();
+	});
+
+	function size_func(){
+		var d_w = $(window).width();
+		var d_h = $(window).height();
+		d_h = d_h - 80 - 40;
+
+
+
+		if (d_w > 1280) {
+			if (d_h > 820) {
+				//d_h = 825;
+			}
+			else if (d_h > 750) {
+				//d_h = 750;
+			}
+
+		}
+		else if (d_w < 1024) {
+			d_w = 1024;
+			d_h = 628;
+		}
+		else {
+
+		}
+
+
+		$(".inner_wrap").css("height", d_h);
+
+
+
+		d_w = d_w - $(".left_contents").width();
+
+		var list_w = (d_w - 20) / 4;
+		var list_h = (d_h - 12) / 3;
+		$(".group_list li").css("width", list_w);
+		$(".group_list li").css("height", list_h);
+		$(".fix_chamc .chamc_img").css("height", list_h);
+		$(".loop .owl_wrap h3").css("margin-top", "30px");
+		//$(".loop .owl_wrap h3").css("margin-top", list_h+30 + "px");
+
+		var logo_h = $(".window .title").height();
+		var logo_img_h = $(".window .title img").height();
+		logo_h = (logo_h/2) - (logo_img_h/2);
+
+
+		$(".window .title img").css("top", logo_h + "px");
+
+		h3_func();
+
+        $(".group_list li").each(function () {
+
+			$(this).hover(
+				function(){
+
+
+					$(this).addClass("on");
+
+					var li_class = $(this).attr("class").split(" ",1);
+					$(".hover_popup").addClass("on");
+					$(".hover_popup ."+ li_class).addClass("on");
+
+					h3_func(li_class);
+
+				},
+				function(){
+					//alert(2);
+					$(this).removeClass("on");
+
+					var li_class = $(this).attr("class").split(" ",1);
+					$(".hover_popup").removeClass("on");
+					$(".hover_popup ."+ li_class).removeClass("on");
+				}
+			);
+
+		});
+
+
+
+
+	};
+
+	function h3_func(li_class){
+
+
+		var list_h = $(".group_list li." + li_class).height();
+        var owl_h3_h = $(".owl_wrap."+ li_class +" h3").innerHeight();
+        var loop_h3_h = $(".loop .owl_wrap h3").innerHeight();
+       //alert(owl_h3_h);
+		var owl_h_t = list_h - owl_h3_h;
+		var loop_owl_h3_h = $(".group_list li").height() - loop_h3_h;
+		//alert(loop_owl_h3_h);
+
+
+		$(".owl_wrap."+ li_class +" h3").css("margin-top", owl_h_t + "px");
+	};
+</script>
+
+
+<!-- 통계 분석 -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46670845-20']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<!-- //통계 분석 -->
+
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="gate/css/docs.theme.min.css" />
+
+<script type="text/javascript" src="gate/js/owl.carousel.js"></script>
+<script src="gate/js/owl.carousel.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+	<div class="header_wrap">
+		<!-- logo -->
+		<h1><a href="#none"><img src="gate/img/header_logo.png" alt="CHA 의과학대학교 차병원"></a></h1>
+		<!-- //logo -->
+
+        <ul>
+            <li>
+                <a href="http://www.chamc.co.kr/media/magazine.cha" target="_blank">
+                    <img src="gate/img/icon_mega.png" alt="차병원보" />
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/chagroup" target="_blank">
+                    <img src="gate/img/icon_blog.png" alt="네이버블로그" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCHDoVNV6NkgjuiCyLIMmdqQ" target="_blank">
+                    <img src="gate/img/icon_youtube.png" alt="유튜브" />
+                </a>
+            </li>
+            <li>
+                <a href="https://post.naver.com/chagroup" target="_blank">
+                    <img src="gate/img/icon_post.png" alt="포스트" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/chahospital" target="_blank">
+                    <img src="gate/img/icon_facebook.png" alt="페이스북" />
+                </a>
+            </li>
+
+        </ul>
+	</div>
+
+	<div class="inner_wrap">
+
+
+		<div class="left_contents">
+			<div class="hover_popup">
+                <div class="owl_wrap list01">
+                    <h3>강남차병원</h3>
+                    <p class="owl_txt">차병원그룹의 모태 <br>세계 최고의 여성종합병원</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>02-3468-3000</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">서울특별시 강남구 논현로 566 (역삼1동 650-9)</strong></span>
+                    </p>
+                </div>
+				<div class="owl_wrap list02">
+                    <h3>분당차병원</h3>
+                    <p class="owl_txt">미래 의학을 선도하는 <br>글로벌 종합병원</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>031-780-5000</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">경기도 성남시 분당구 야탑로 59 (야탑동)</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list03">
+                    <h3>분당차여성병원</h3>
+                    <p class="owl_txt">엄마와 아기, 여성의 <br>라이프사이클을 책임지는 여성종합병원 </p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>031-780-5000</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">경기도 성남시 분당구 야탑로 59 (야탑동)</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list04">
+                    <h3>일산차병원</h3>
+                    <p class="owl_txt">생애주기별 맞춤 의료서비스를 제공하는 글로벌 여성 특화 병원</p>
+                    <p class="call_info">
+
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">경기도 고양시 일산동구 장항동 889</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list05">
+                    <h3>차움</h3>
+                    <p class="owl_txt">프리미엄 의료 서비스를 갖춘 <br>글로벌 안티에이징 라이프센터</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>02-3015-5001</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">서울특별시 강남구 도산대로 442 (청담동 4-1)</strong></span>
+					</p>
+                </div>
+                <div class="owl_wrap list06">
+                    <h3>차 여성의학연구소 서울역센터</h3>
+                    <p class="owl_txt">최첨단 시설, 아시아 최대 규모의 <br>글로벌 난임센터</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>02-2002-0300</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">서울특별시 중구 한강대로 416 서울스퀘어 2층 (구 대우빌딩)</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list07">
+                    <h3>차 여성의학연구소 강남</h3>
+                    <p class="owl_txt">최신 난임 치료 및 <br>세계적 생식 의학 연구 기관</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>02-3468-3460</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">서울 특별시 강남구 논현로 569 (역삼동 606-5)</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list08">
+                    <h3>차 여성의학연구소 분당</h3>
+                    <p class="owl_txt">난임 다학제 진료로 난임 치료의 새로운 패러다임 제시 <br>미래형 통합 프리미엄 매니지먼트 난임센터</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>031-881-5200</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">경기도 성남시 분당구 야탑로 64, 2층</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list09">
+                    <h3>차움 건진센터 삼성분원</h3>
+                    <p class="owl_txt">첨단의학, 대체의학, 기능의학이 조화된 <br>진단시스템을 갖춘 건진센터</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>1800-7750</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">서울 강남구 테헤란로 509(삼성동 158-16) 엔씨소프트(엔씨타워 I) 2층</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list10">
+                    <h3>구미차병원</h3>
+                    <p class="owl_txt">전문화된 진료로 지역 의료를 선도하는<br>환자 중심 병원</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>054-450-9970~1</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">경상북도 구미시 신시로10길 12 (형곡동 855)</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list11">
+                    <h3>차 여성의학연구소 대구</h3>
+                    <p class="owl_txt">세계 수준의 난임치료 기술력을 갖춘<br>대구∙영남권 최대 규모의 난임센터</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>053-222-4200</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">대구 중구 달구벌대로 2095 삼성생명빌딩 4,5층</strong></span>
+                    </p>
+                </div>
+                <div class="owl_wrap list12">
+                    <h3>LA 할리우드 차병원</h3>
+                    <p class="owl_txt">의료서비스 역진출 1호에 빛나는 <br>1,600 병상 규모의 종합병원</p>
+                    <p class="call_info">
+                    	<span class="call_txt"><img src="gate/img/icon_call.png" alt="" /><strong>전화 예약</strong><em>+1-213-413-3000</em></span>
+                    	<span class="call_txt"><img src="gate/img/icon_location_hover.png" alt="" /><strong class="address">1300 North Vermont Avenue Los Angeles, CA 90027</strong></span>
+                    </p>
+                </div>
+
+			</div>
+			<!-- 메인비주얼 -->
+            <div id="mainVisual">
+               <div class="fix_chamc">
+					<div class="over_box">
+						<div class="btn_wrap"><!--수정0829-->
+							<a href="http://www.chamc.co.kr/main.cha" target="_blank">
+							    <span class="line_btn white">
+								    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt=""></em>
+							    </span>
+                            </a>
+						</div>
+					</div>
+					<div class="logo">
+						<p class="title"><img src="gate/img/chamc_logo.gif" alt="" style="top: -7.5px;"></p>
+						<div class="cover"></div>
+						<img class="chamc_img" src="gate/img/img_list_chamc.png" alt="" >
+					</div>
+                </div>
+                <div id="demos" class="bxmain">
+                    <a href="http://www.chamc.co.kr/main.cha" target="_blank"></a>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="loop">
+                            	<!--
+								<div class="item img01">
+                                    <div class="owl_wrap">
+                                        <h3>CHA Global Bio Medical Group</h3>
+                                        <strong>난임부터 난치성 치료까지,</strong>
+                                        <p class="owl_txt">연구 중심의 차병원이 글로벌 네트워크로<br>미래의학을 선도합니다.</p>
+                                        <a class="home_link" href="http://www.chamc.co.kr/main.cha" target="_blank"><img src="http://chamc.co.kr/gate/img/icon_home.png" alt="" />차병원그룹 홈페이지 바로가기</a>
+                                    </div>
+                                </div>
+                                -->
+                                <!--  *******질문 ctrl+u 와 f12 눌렀을 때 elements 코드가 다름******* -->
+                                <!-- <div class="owl-stage-outer"> -->
+                                <div class="item img02">
+                                    <div class="owl_wrap owl_wrap2">
+
+                                        <h3>인간존중, 생명사랑, 연구중심</h3>
+
+                                        <p class="owl_txt">글로벌 초일류 의료 네트워크 도약, 인류미래 공헌</p>
+                                        <p class="call_info">
+                    	                    <span class="call_txt"><img src="gate/img/icon_wrap2_home.png" alt=""><strong class="hover_home">홈페이지</strong></span>
+                    	                    <span class="call_txt"><img src="gate/img/icon_call.png" alt=""><strong>전화 안내</strong><em>031-881-7000</em></span>
+                    	                    <span class="call_txt"><img src="gate/img/icon_location_hover.png" alt=""><strong class="address">경기도성남시 분당구 판교로 335 </strong></span>
+                                        </p>
+                                        <!--<a class="home_link" href="http://www.chamc.co.kr/main.cha" target="_blank"><img src="http://chamc.co.kr/gate/img/icon_home.png" alt="" />차병원 홈페이지 바로가기</a>-->
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <div class="item img03">
+                                    <div class="owl_wrap owl_wrap2">
+                                       <h3>참 좋은병원, 차병원</h3>
+
+                                        <p class="owl_txt">연구하는 교수, 실력있는 의사, 도전하는 연구원 </p>
+                                        <p class="call_info">
+                    	                    <span class="call_txt"><img src="gate/img/icon_wrap2_home.png" alt=""><strong class="hover_home">홈페이지</strong></span>
+                    	                    <span class="call_txt"><img src="gate/img/icon_call.png" alt=""><strong>전화 안내</strong><em>031-881-7000</em></span>
+                    	                    <span class="call_txt"><img src="gate/img/icon_location_hover.png" alt=""><strong class="address">경기도성남시 분당구 판교로 335 </strong></span>
+                                        </p>
+                                        <!--<a class="home_link" href="http://www.chamc.co.kr/main.cha" target="_blank"><img src="http://chamc.co.kr/gate/img/icon_home.png" alt="" />차병원 홈페이지 바로가기</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttonWrap bxmain">
+                                <a class="button secondary play1"></a>
+                                <a class="button secondary stop1"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 메인비주얼 -->
+		</div>
+		<div class="block_wrap">
+
+			<ul class="group_list">
+				<li class="list01" >
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://gangnam.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://gangnam.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="https://gangnam.chamc.co.kr/guide/way/map.cha" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list01.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list01.jpg" alt="" >
+					</div>
+				</li>
+				<li class="list02" >
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://bundang.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a href="http://bundang.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://bundang.chamc.co.kr/MedicalInfo/ChaInfoLocation.aspx?menuCode=1020" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list02.png" alt=""></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list02.jpg" alt="" >
+					</div>
+				</li>
+				<li class="list03">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://bundangwoman.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://bundangwoman.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://bundangwoman.chamc.co.kr/MedicalInfo/ChaInfo.aspx?menuCode=1315" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list03.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list03.jpg" alt="" />
+					</div>
+				</li>
+                <li class="list04">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://ilsan.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://ilsan.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://ilsan.chamc.co.kr/#s4" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list04.png" alt=""></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list04.jpg" alt="" />
+					</div>
+				</li>
+            </ul>
+            <ul class="group_list">
+				<li class="list05">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://www.chaum.net/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://www.chaum.net/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://www.chaum.net/centerInfo/direction.aspx?menuCode=A_A05" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list05.png" alt=""></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list05.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list06">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://seoul.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://seoul.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://seoul.chamc.co.kr/info/info.aspx?menuCode=2219" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list06.png" alt=""></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list06.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list07">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="https://chaimc.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="https://chaimc.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="https://chaimc.chamc.co.kr/guide/location.cha" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list07.png" alt=""></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list07.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list08">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="https://ivf.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a href="https://ivf.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="https://ivf.chamc.co.kr/guide/location.cha" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list08.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list08.jpg" alt="" />
+					</div>
+				</li>
+            </ul>
+            <ul class="group_list">
+				<li class="list09">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://gangnam.chahealth.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a href="http://gangnam.chahealth.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="https://gangnam.chahealth.co.kr:446/center/map.cha" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="http://chamc.co.kr/gate/img/logo_list09.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="http://chamc.co.kr/gate/img/img_list09.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list10">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://kumi.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://kumi.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://kumi.chamc.co.kr/MedicalInfo/ChaInfo.aspx?menuCode=617" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list10.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list10.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list11">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://daegu.chamc.co.kr/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a href="http://daegu.chamc.co.kr/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="https://daegu.chamc.co.kr/guide/location.cha" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list11.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list11.jpg" alt="" />
+					</div>
+				</li>
+				<li class="list12">
+					<div class="over_box">
+						<div class="btn_wrap">
+                            <a href="http://hollywoodpresbyterian.com/" target="_blank" class="box_a"></a>
+                            <div class="box_p">
+                                <a  href="http://hollywoodpresbyterian.com/" class="line_btn btn_home" target="_blank">
+                                    <em class="link">홈페이지</em><em class="img"><img src="gate/img/icon_home.png" alt="" /></em>
+                                </a>
+                                <a href="http://www.hollywoodpresbyterian.com/patients-and-visitors/directions-parking/" class="line_btn btn_go" target="_blank">
+                                    <em class="link">오시는 길</em><em class="img last"><img src="gate/img/icon_location.png" alt="" /></em>
+                                </a>
+                            </div>
+						</div>
+					</div>
+					<div class="window">
+						<p class="title"><img src="gate/img/logo_list12.png" alt=""/></p>
+						<div class="cover"></div>
+						<img src="gate/img/img_list12.jpg" alt="" />
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+
+
+
+
+
+	</div>
+	<div class="footer_wrap">
+		<div class="copyright">COPYRIGHT@2017 CHAMC. ALL RIGHTS RESERVED</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function () {
+
+
+
+    var bx = $('.loop');
+
+
+    bx.on('initialize.owl.carousel initialized.owl.carousel' +
+
+        'refresh.owl.carousel refreshed.owl.carousel ' +
+        'translate.owl.carousel translated.owl.carousel ', function (e) {
+
+            //if (e.property.name != 'position') return;
+            //alert(e.html())
+            //alert($(this).html());
+            //var current = e.relatedTarget.current()
+            //var items = $(this).find('.owl-stage').children()
+            //var add = e.type == 'changed'
+
+            var owl_d_w = $(window).width();
+
+            if (owl_d_w < 641) {
+
+            }
+            else {
+                var current = e.item.index;
+
+
+
+
+                $(e.target).find(".owl-item").eq(current).find("h3").animate({ "margin-left": "0px", "opacity": "1" }, { duration: 500 }, "swing");
+                $(e.target).find(".owl-item").eq(current).find("strong").animate({ "margin-left": "0px", "opacity": "1" }, { duration: 900 }, "swing");
+                $(e.target).find(".owl-item").eq(current).find("p").animate({ "margin-left": "0px", "opacity": "1" }, { duration: 1100 }, "swing");
+                $(e.target).find(".owl-item").eq(current).find("a").animate({ "margin-left": "0px", "opacity": "1" }, { duration: 1200 }, "swing");
+                //console.log('Image current is ' + src);
+
+
+                //items.eq(e.relatedTarget.normalize(current)).toggleClass('current', add)
+
+                $(".owl-item h3").css("opacity", "0");
+                $(".owl-item strong").css("opacity", "0");
+                $(".owl-item p").css("opacity", "0");
+            }
+
+
+
+    });
+
+
+
+
+
+    bx.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        animateIn: 'fadeIn',
+        callbacks: true,
+        beforeInit: true,
+        afterInit: true,
+
+    });
+
+    $('.play1').on('click', function () {
+        bx.trigger('play.owl.autoplay', [3000])
+    })
+    $('.stop1').on('click', function () {
+        bx.trigger('stop.owl.autoplay')
+
+    })
+
+
+
+
+
+
+
+})
+</script>
+
+
+
+
+</body>
+</html>
